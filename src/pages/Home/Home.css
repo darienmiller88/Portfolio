@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: rgb(0, 4, 49);
+}
+
+.name{
+    font-size: 60px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 25%;
+}
+
+.my-margin{
+    margin-left: 20%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.slogan{
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.description{
+    color: gray;
+}
+
+.github-link{
+    text-decoration: none;
+    border: 2px solid #89CFF0;
+    border-radius: 5px;
+    padding: 15px;
+    color: #89CFF0;
+    transition: 0.3s;
+}
+
+.github-link:hover{
+    background-color: rgba(137, 207, 240, 0.3);
+    color: #89CFF0;
+}
