@@ -6,9 +6,16 @@ body{
 
 .name{
     font-size: 60px;
+    font-weight: bold;
     color: white;
     margin-top: 100px;
     margin-left: 25%;
+}
+
+.slogan{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
 }
 
 .my-margin{
@@ -16,10 +23,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.slogan{
-    font-size: 60px;
-    color: whitesmoke;
-}
+
 
 .description{
     color: gray;
@@ -37,4 +41,20 @@ body{
 .github-link:hover{
     background-color: rgba(137, 207, 240, 0.3);
     color: #89CFF0;
+}
+
+@media only screen and (max-width: 360px) {
+    .my-margin{
+        margin-left: 5%;
+    }
+
+    .name, .slogan{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .description{
+        margin-right: 1%;
+        overflow-wrap: break-word;
+    }
 }

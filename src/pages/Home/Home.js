@@ -12,16 +12,17 @@ export default function Home() {
         <div>
             <NavBar/>
             <div className="name my-margin">
-                Darien Miller
+                Darien Miller.
             </div>
             <div className="slogan my-margin">
                 Aspiring Software Engineer.
             </div>             
             <br/>
             <p className="description my-margin">
-                I'm a recent Computer Science graduate out of Brooklyn College seeking to further<br/>
-                my education in Graduate school for Compputer Engineering. I specialize in fullstack <br/>
-                development with a focus on backend development, and am currently seeking employment.
+                I'm a recent Computer Science graduate out of Brooklyn College <br/>
+                seeking to further my education in Graduate school for Compputer Engineering.<br/>
+                I specialize in fullstack development with a focus on backend development,<br/>
+                and am currently seeking employment.
             </p>
             <br/>
             <a className="github-link my-margin" href="https://github.com/darienmiller88">
