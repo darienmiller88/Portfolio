@@ -5,7 +5,7 @@
 
 
 <p align="center">
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bc438b2e-9f12-4bbe-987e-d36fcef20a2f/deploy-status)](https://app.netlify.com/sites/darienmiller/deploys)
 </p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bc438b2e-9f12-4bbe-987e-d36fcef20a2f/deploy-status)](https://app.netlify.com/sites/darienmiller/deploys)
