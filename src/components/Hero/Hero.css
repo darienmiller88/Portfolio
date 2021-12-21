@@ -1,0 +1,63 @@
+.hi{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--baby-blue);    
+    margin-top: 100px;
+
+}
+
+.name{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+.slogan{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+}
+
+/* .my-margin{
+    margin-left: 20%;
+    transition-delay: 500ms;
+} */
+
+.description{
+    color: gray;
+    width: 50vw;
+    overflow-wrap: break-word;
+}
+
+.github-link{
+    text-decoration: none;
+    border: 3px solid var(--baby-blue);
+    border-radius: 5px;
+    padding: 15px;
+    color: var(--baby-blue);
+    transition: 0.3s;
+}
+
+.github-link:hover{
+    background-color: var(--baby-blue-transparent);
+    color: var(--baby-blue);
+}
+
+button{
+    
+}
+
+@media only screen and (max-width: 450px) {
+    .my-margin{
+        margin-left: 5%;
+    }
+
+    .name, .slogan{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .description{
+        width: 90vw;
+    }
+}

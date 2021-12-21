@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react'
 import "./Home.css"
 import "../../components/Scrollbar/Scrollbar.css"
+import About from "../../components/About/About"
+import Hero from '../../components/Hero/Hero'
+import Projects from "../../components/Projects/Projects"
+import Work from '../../components/Work/Work'
+import Technologies from "../../components/Technologies/Technologies"
+import Footer from "../../components/Footer/Footer"
 import NavBar from '../../components/NavBar/NavBar'
 
 export default function Home() {
@@ -11,26 +17,12 @@ export default function Home() {
     return (
         <div>
             <NavBar/>
-            <div className="wrapper">
-                <div className="name my-margin">
-                Darien Miller.
-                </div>
-                <div className="slogan my-margin">
-                    Aspiring Software Engineer.
-                </div>             
-                <br/>
-                <p className="description my-margin">
-                    I'm a recent Computer Science graduate out of Brooklyn College <br/>
-                    seeking to further my education in Graduate school for Compputer Engineering.<br/>
-                    I specialize in fullstack development with a focus on backend development,<br/>
-                    and am currently seeking employment.
-                </p>
-                <br/>
-                <a className="github-link my-margin" href="https://github.com/darienmiller88">
-                    Check out my projects!
-                </a>
-            </div>
-            
+            <Hero/>
+            <About/>            
+            <Technologies/>
+            <Projects/>
+            <Work/>
+            <Footer/>
         </div>
     )
 }

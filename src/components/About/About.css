@@ -1,0 +1,61 @@
+#about-section > .about-header{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-me{
+    display: grid;
+    grid-template-columns: 55% auto;
+    gap: 5%;
+    width: 80%;
+}
+
+.about-me-description{
+    color: mintcream;
+    overflow-wrap: break-word;
+} 
+
+
+#about-section > .about-me > .about-me-description > a {
+    color: var(--baby-blue);
+    text-decoration: none;
+    background-image: linear-gradient(var(--baby-blue), var(--baby-blue));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+}
+
+#about-section > .about-me > .about-me-description >
+a:hover,
+a:focus,
+a:active {
+    color: var(--baby-blue);
+    background-size: 100% 0.1em;
+}
+
+#pic{
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px var(--dark-navy) solid;
+    transition: 0.5s;
+    margin: auto;
+}
+
+#pic:hover{
+    border: 2px var(--baby-blue) solid;
+}
+
+@media only screen and (max-width: 700px) {
+    .about-me{
+        display: initial;
+        
+    }
+
+    .my-pic-div::before{
+        content: "\a";
+        white-space: pre;
+    }
+}
