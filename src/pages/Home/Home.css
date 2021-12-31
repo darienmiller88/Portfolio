@@ -8,3 +8,9 @@ body{
 .number{
     color: var(--baby-blue);
 }
+
+@media only screen and (max-width: 450px){
+    body{
+        margin-left: 5%;
+    }
+}

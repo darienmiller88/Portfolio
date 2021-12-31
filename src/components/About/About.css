@@ -15,8 +15,11 @@
     overflow-wrap: break-word;
 } 
 
+#about-section > .about-me > .about-me-description > p{
+    color: rgb(190, 190, 190);
+}
 
-#about-section > .about-me > .about-me-description > a {
+#about-section > .about-me > .about-me-description > p > a {
     color: var(--baby-blue);
     text-decoration: none;
     background-image: linear-gradient(var(--baby-blue), var(--baby-blue));
@@ -27,7 +30,7 @@
     transition: background-size 0.2s ease-in-out;
 }
 
-#about-section > .about-me > .about-me-description >
+#about-section > .about-me > .about-me-description > p >
 a:hover,
 a:focus,
 a:active {
@@ -51,7 +54,6 @@ a:active {
 @media only screen and (max-width: 700px) {
     .about-me{
         display: initial;
-        
     }
 
     .my-pic-div::before{

@@ -12,26 +12,28 @@ export default function About() {
 
             <div className="about-me">
                 <div className="about-me-description">
-                    Hey there. My name is Darien and I enjoy creating things that live on the internet. 
-                    My interest in web development started back in 2012 when I decided to try editing 
-                    custom Tumblr themes — turns out hacking together a custom reblog button taught me
-                    a lot about HTML & CSS!
-                    <br/><br/>
-                    Fast-forward to today, and I’ve had the privilege of working at an advertising agency,
-                    a start-up, a huge corporation, and a student-led design studio. My main focus these
-                    days is building accessible, inclusive products and digital experiences at
-                    <a href='/'> Upstatement </a>
-                    for a variety of clients.
-                    <br/><br/>
-                    I also recently launched a course that covers everything you need to build a web app
-                    with the Spotify API using Node & React.
-                    </div>
+                    <p>
+                        Hey there! My name is Darien and I'm Software Developer with a focus on Back end 
+                        development and specialization in lower level languages such as C++ and Go. 
+                        I started programming in 2017 mostly on game development in SFML and C++, and 
+                        slowly transtioned to the web and Software development world using Go as my primary
+                        backend language.
+                    </p>
+                    <p>
+                        As of today, I've measurably improved the lives of hundreds of clients through my
+                        private tutoring services and working at agencies like 
+                        <a href='https://bit.ly/3sxAXcB'> CUNY Tutor Corps </a>,
+                        be they colleagues working alongside me, or school students K through 12. Recently,
+                        I have become an alumni, and Software Engineering graduate from
+                        <a href='https://cunytechprep.nyc/'> CUNY Tech Prep </a>, learning in demand
+                        skills and growing my network substantially.
+                    </p>
+                </div>
                 <div className="my-pic-div">
                     <img src={myPic}  alt="me" id="pic"/>
                 </div>
             </div>
             <SectionDivider/>
         </div>
-        
     )
 }

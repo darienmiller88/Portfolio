@@ -1,0 +1,19 @@
+#technologies-section > .technologies-header{
+    font-size: 40px;
+    font-weight: bold;    
+}
+
+#technologies-section > .technologies{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100vw;
+    border: white 2px solid;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+#technologies-section > .technologies > .technology{
+    border: red 2px solid;
+    width: fit-content;
+    color: white;
+}

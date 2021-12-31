@@ -67,6 +67,10 @@ nav{
     background-color: var(--dark-navy-transparent)
 }
 
+@media only screen and (max-width: 991px) {
+    
+}
+
 @media only screen and (max-width: 500px) {
     #logo{
         margin-left: 1rem;
