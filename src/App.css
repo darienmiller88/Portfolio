@@ -1,6 +1,6 @@
 :root{
-    --baby-blue: rgb(137, 207, 240);
-    --baby-blue-transparent: rgba(137, 207, 240, 0.3);
-    --dark-navy: rgb(0, 4, 49);
-    --dark-navy-transparent: rgba(0, 4, 49, 0.96);
+    --primary: rgb(137, 207, 240);
+    --primary-transparent: rgba(137, 207, 240, 0.3);
+    --secondary: rgb(0, 4, 49);
+    --secondary-transparent: rgba(0, 4, 49, 0.96);
 }

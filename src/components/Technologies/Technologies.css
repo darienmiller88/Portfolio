@@ -1,19 +1,49 @@
 #technologies-section > .technologies-header{
     font-size: 40px;
-    font-weight: bold;    
+    font-weight: bold;  
+    margin-left: 15%;
 }
 
 #technologies-section > .technologies{
     display: grid;
-    grid-template-columns: auto auto auto;
-    width: 100vw;
-    border: white 2px solid;
-    margin-left: 50%;
-    margin-right: 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 15%;
+    width: 65vw;
 }
 
 #technologies-section > .technologies > .technology{
-    border: red 2px solid;
-    width: fit-content;
     color: white;
+}
+
+#technologies-section > p {
+    margin-left: 15%;
+    color: gray;
+    width: 65vw;
+    overflow-wrap: break-word;
+}
+
+#technologies-section > .technology-description{
+    width: 90%;
+}
+
+@media only screen and (max-width: 600px){
+    #technologies-section > .technologies{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 80vw;
+        gap: 20px;
+    }
+
+    #technologies-section > .technologies {
+        margin-left: 5%;
+    }
+    
+    #technologies-section > p{
+        width: 85vw;
+        margin-left: 5%;
+    }
+
+    #technologies-section > .technologies-header{
+        margin-left: 5%;
+    }
 }

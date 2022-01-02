@@ -1,3 +1,7 @@
+#about-section{
+    margin-left: 15%;
+}
+
 #about-section > .about-header{
     font-size: 40px;
     font-weight: bold;
@@ -20,9 +24,9 @@
 }
 
 #about-section > .about-me > .about-me-description > p > a {
-    color: var(--baby-blue);
+    color: var(--primary);
     text-decoration: none;
-    background-image: linear-gradient(var(--baby-blue), var(--baby-blue));
+    background-image: linear-gradient(var(--primary), var(--primary));
     background-size: 0% 0.1em;
     background-position-y: 100%;
     background-position-x: 0%;
@@ -34,7 +38,7 @@
 a:hover,
 a:focus,
 a:active {
-    color: var(--baby-blue);
+    color: var(--primary);
     background-size: 100% 0.1em;
 }
 
@@ -42,13 +46,13 @@ a:active {
     max-width: 80%;
     height: auto;
     border-radius: 10px;
-    border: 2px var(--dark-navy) solid;
+    border: 2px var(--secondary) solid;
     transition: 0.5s;
     margin: auto;
 }
 
 #pic:hover{
-    border: 2px var(--baby-blue) solid;
+    border: 2px var(--primary) solid;
 }
 
 @media only screen and (max-width: 700px) {
