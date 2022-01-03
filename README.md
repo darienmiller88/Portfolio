@@ -1,5 +1,5 @@
 <p align="center">
-  <img  width="80px" height="80px" alt="logo" src="./src/img/logo.png">
+  <img  width="100px" height="100px" alt="logo" src="./src/img/logo.png">
 </p>
 <h1 align="center">Personal website built with React</h1>
 
