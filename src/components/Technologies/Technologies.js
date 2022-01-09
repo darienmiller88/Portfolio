@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Technologies.css"
 import SectionDivider from "../SectionDivider/SectionDivider"
+import TechnologyCard from "../TechnologyCard/TechnologyCard"
 import { FaReact, FaDatabase, FaFigma } from 'react-icons/fa'
 
 export default function Technologies() {
@@ -15,25 +16,25 @@ export default function Technologies() {
             </p>
             <br/>
             <div className="technologies">
-                <div className="technology">
-                    <FaReact/><br/>
+                <div className="technology techtwo">
+                    <FaReact className="icon"/><br/>
                     <h5>Front-End</h5>
                     <div className="technology-description">Experience with React.js, Vue and Next.js</div>
                 </div>
-                <div className="technology">
-                    <FaDatabase/><br/>
+                <div className="technology techtwo">
+                    <FaDatabase className="icon"/><br/>
                     <h5>Back-End</h5>
                     <div className="technology-description">Experience with MongoDB, PostgreSQL, MySQL,
                         Heroku, Docker
                     </div>
                 </div>
-                <div className="technology">
-                    <FaFigma/><br/>
+                <div className="technology techtwo">
+                    <FaFigma className="icon"/><br/>
                     <h5>UI/UX</h5>
                     <div className="technology-description">Experience with tools such as Figma</div>
                 </div>
             </div> 
-            {/* <SectionDivider/> */}
+            <SectionDivider/>
         </div>
     )
 }

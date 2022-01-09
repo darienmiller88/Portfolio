@@ -1,0 +1,115 @@
+.card-wrapper{
+    display: grid;
+    width: 70vw;
+    height: 250px;
+    align-items: center;
+    margin-left: 15%;
+    margin-bottom: 25px;
+    border: 2px solid white;
+}
+
+.card-wrapper-left{
+    grid-template-columns: 60% auto;
+}
+
+.card-wrapper-right{    
+    grid-template-areas: "picture" "description";
+    grid-template-columns: auto 60%;
+}
+
+.card-wrapper:hover{
+    cursor: pointer;
+}
+
+.card-wrapper:hover > .card-picture-shadow-left{
+    height: 100%;
+    box-shadow: -6px 0px 15px -1px black;
+    z-index: 1;
+}
+
+/* Shadowing effect for card with left aligned description*/
+.card-wrapper-left:hover > .card-description{
+    height: 80%;
+    box-shadow: none;
+}
+
+.card-wrapper-left:hover > .card-picture{
+    height: 100%;
+    box-shadow: 6px 0px 15px -1px black;    
+    z-index: 1;
+}
+/* Shadowing effect left aligned end */
+
+
+/* Shadowing effect for card with right aligned description*/
+.card-wrapper-right:hover > .card-description{
+    height: 80%;
+    box-shadow: none;
+}
+
+.card-wrapper-right:hover > .card-picture{
+    height: 100%;
+    box-shadow: -6px 0px 15px -1px black;    
+    z-index: 1;
+}
+/* Shadowing effect right aligned end*/
+
+
+.card-picture{
+    height: 80%;
+    background-color: red;
+    border: 2px red solid;
+    transition: 0.3s;
+}
+
+.card-description{
+    height: 100%;
+    background-color: blue;
+    border: 2px blue solid;
+    transition: 0.3s;
+}
+
+.card-wrapper-left > .card-description{
+    box-shadow: -6px 0px 15px -1px black;
+}
+
+.card-wrapper-right > .card-picture{
+    grid-area: picture;
+}
+
+.card-wrapper-right > .card-description{
+    box-shadow: 6px 0px 15px -1px black;    
+    grid-area: description;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 701px) {
+    .card-wrapper-right{
+        grid-template-areas: "description picture";
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .card-wrapper{
+        grid-template-columns: none;
+        grid-template-rows: 60% auto;
+    }
+
+    .card-picture{
+        height: 100%;
+    }
+
+    .card-wrapper:hover > .card-description{
+        height: 100%;
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .card-wrapper{
+        margin-left: 0%;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 95%;
+    }
+}
