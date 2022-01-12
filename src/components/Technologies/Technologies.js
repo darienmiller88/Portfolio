@@ -15,23 +15,56 @@ export default function Technologies() {
                 Front-End and Back-End tools.
             </p>
             <br/>
+
             <div className="technologies">
                 <div className="technology techtwo">
-                    <FaReact className="icon"/><br/>
-                    <h5>Front-End</h5>
-                    <div className="technology-description">Experience with React.js, Vue and Next.js</div>
-                </div>
-                <div className="technology techtwo">
-                    <FaDatabase className="icon"/><br/>
-                    <h5>Back-End</h5>
-                    <div className="technology-description">Experience with MongoDB, PostgreSQL, MySQL,
-                        Heroku, Docker
+                    <div className="icon-div">
+                        <FaReact className="icon"/>
+                    </div>  
+                    <div className="technology-header">
+                        <h4>Front-End</h4>
+                    </div>     
+                    <div className="technology-description">
+                        <p>
+                            Experience with React.js, Vue and Next.js
+                        </p>
+                    </div>
+                    <div className="button-section">
+                        <button>Read more </button>
                     </div>
                 </div>
                 <div className="technology techtwo">
-                    <FaFigma className="icon"/><br/>
-                    <h5>UI/UX</h5>
-                    <div className="technology-description">Experience with tools such as Figma</div>
+                    <div className="icon-div">
+                        <FaDatabase className="icon"/>
+                    </div>
+                    <div className="technology-header">
+                        <h4>Back-End</h4>
+                    </div>    
+                    <div className="technology-description">
+                        <p>
+                           Experience with MongoDB, PostgreSQL, MySQL,
+                           Heroku, Docker 
+                        </p>
+                    </div>
+                    <div className="button-section">
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div className="technology techtwo">
+                   <div className="icon-div">
+                        <FaFigma className="icon"/>
+                    </div> 
+                    <div className="technology-header">
+                        <h4>UI/UX</h4>
+                    </div> 
+                    <div className="technology-description">
+                        <p>
+                            Experience with tools such as Figma and blah blah blah
+                        </p>
+                    </div>
+                    <div className="button-section">
+                        <button>Read more </button>
+                    </div>
                 </div>
             </div> 
             <SectionDivider/>

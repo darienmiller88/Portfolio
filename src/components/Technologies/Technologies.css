@@ -6,25 +6,64 @@
 
 #technologies-section > .technologies{
     display: grid;
+    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 15%;
     width: 65vw;
+    border: 2px solid purple;
+}
+
+#technologies-section > .technologies > .technology > .icon-div{
+    display: grid;
+    /* border: 2px solid yellow; */
+    padding: 5px;
+}
+
+#technologies-section > .technologies > .technology > .icon-div > .icon{
+    font-size: 50px;
+    margin: auto;
+    /* color: var(--primary); */
+}
+
+#technologies-section > .technologies > .technology > .technology-header{
+    display: grid;    
+
+    /* border: 2px solid rgba(255, 51, 0, 0.781); */
+    padding: 10px;
+}
+
+#technologies-section > .technologies > .technology > .technology-header > h4{
+    margin: auto;
 }
 
 #technologies-section > .technologies > .technology{
-    color: white;
+    color: var(--primary);
+    border:  var(--primary) solid 2px;
+    background-color: white;
 }
 
-#technologies-section > p {
+#technologies-section > .technologies > .technology > .button-section{
+    border: 2px seagreen solid;
+}
+
+#technologies-section > p{
     margin-left: 15%;
     color: gray;
     width: 65vw;
     overflow-wrap: break-word;
 }
 
-#technologies-section > .technology-description{
-    width: 90%;
+#technologies-section > .technologies > .technology > .technology-description{
+    display: grid;
+    border: steelblue 2px solid;
 }
+
+#technologies-section > .technologies > .technology > .technology-description > p {
+    margin: auto;
+    border: burlywood 2px solid;
+    width: 85%;
+}
+
 
 @media only screen and (max-width: 600px){
     #technologies-section > .technologies{
