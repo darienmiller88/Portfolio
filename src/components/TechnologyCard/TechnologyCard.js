@@ -1,24 +1,27 @@
 import React from 'react'
+import "./TechnologyCard.css"
 import { FaReact, FaDatabase, FaFigma } from 'react-icons/fa'
+import { technologyConstants } from "../Constants/Constants"
 
 
-export default function TechnologyCard() {
+export default function TechnologyCard(props) {
     return (
         <div className="technology-card">
             <div className="icon-div">
-                <FaDatabase className="icon"/>
+                {
+                   props.icon
+                }
             </div>
             <div className="technology-header">
-                <h4>Back-End</h4>
+                <h3>{props.header}</h3>
             </div>    
             <div className="technology-description">
                 <p>
-                    Due to being primarily Back-end based, I can utilize multiple technologies
-                    such as MongoDB, PostgreSQL, Node.js, MySQL, Heroku, Netlify, and Docker.
+                    {props.description}
                 </p>
             </div>
             <div className="button-section">
-                <button>Read more</button>
+                <a href={props.link}>Read more</a>
             </div>
         </div>
     )

@@ -1,0 +1,70 @@
+.technology-card{
+    display: grid;
+    grid-template-rows: 15% 15% 50% auto;
+    height: 400px;
+    border-radius: 10px;
+    color: var(--primary);
+    border: solid 2px var(--primary);
+    /* background-color: white; */
+    transition: 0.5s;
+    box-shadow: 10px 10px 15px 5px rgb(25, 25, 25);
+}
+
+.technology-card:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 25px 5px rgb(50, 50, 50);
+}
+
+.technology-card > .icon-div, .technology-header, .technology-description, .button-section {
+    display: grid;
+}
+
+.technology-card > .icon-div > .icon{
+    font-size: 50px;
+    margin: auto;
+}
+
+.technology-card > .technology-header > h3{
+    margin: auto;
+}
+
+.technology-card > .technology-description > p {
+    margin: auto;
+    width: 90%;
+}
+
+.technology-card > .button-section > a{
+    padding: 10px;
+    margin: auto;
+    border: solid 2px var(--primary);
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--primary);
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.technology-card > .button-section > a:hover{
+    background-color: var(--primary-transparent);
+}
+
+@media only screen and (max-width: 900px){
+    .technology-card{
+        box-shadow: none;
+    }
+
+    .technology-card:hover{
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .technology-card{
+        box-shadow: 10px 10px 15px 5px rgb(25, 25, 25);
+    }
+
+     .technology-card:hover{
+        box-shadow: 10px 10px 15px 5px rgb(50, 50, 50);
+    }
+}

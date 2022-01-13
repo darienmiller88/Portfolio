@@ -1,5 +1,10 @@
-const constants = {
+export const projectCardContstants = {
     
 }
 
-export default constants
+export const technologyConstants = {
+    reactIcon: "reactIcon",
+    figmaIcon: "figmaIcon",
+    databaseIcon: "databaseIcon",
+    
+}
