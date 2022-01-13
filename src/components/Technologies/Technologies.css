@@ -6,44 +6,80 @@
 
 #technologies-section > .technologies{
     display: grid;
-    gap: 20px;
+    gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 15%;
-    width: 65vw;
-    border: 2px solid purple;
+    margin: auto;
+    width: 75vw;
+    /* border: 2px solid purple; */
+}
+
+#technologies-section > .technologies > .technology{
+    display: grid;
+    grid-template-rows: 15% 15% 50% auto;
+    height: 400px;
+    border-radius: 10px;
+    color: var(--primary);
+    border: solid 2px var(--primary);
+    /* background-color: white; */
+    transition: 0.5s;
+    box-shadow: 10px 10px 15px 5px rgb(25, 25, 25);
+}
+
+#technologies-section > .technologies > .technology:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 25px 5px rgb(50, 50, 50);
 }
 
 #technologies-section > .technologies > .technology > .icon-div{
     display: grid;
     /* border: 2px solid yellow; */
-    padding: 5px;
 }
 
 #technologies-section > .technologies > .technology > .icon-div > .icon{
     font-size: 50px;
     margin: auto;
-    /* color: var(--primary); */
 }
 
 #technologies-section > .technologies > .technology > .technology-header{
     display: grid;    
-
     /* border: 2px solid rgba(255, 51, 0, 0.781); */
-    padding: 10px;
 }
 
-#technologies-section > .technologies > .technology > .technology-header > h4{
+#technologies-section > .technologies > .technology > .technology-header > h3{
     margin: auto;
 }
 
-#technologies-section > .technologies > .technology{
-    color: var(--primary);
-    border:  var(--primary) solid 2px;
-    background-color: white;
+#technologies-section > .technologies > .technology > .button-section{
+    display: grid;
+    /* border: 2px seagreen solid; */
 }
 
-#technologies-section > .technologies > .technology > .button-section{
-    border: 2px seagreen solid;
+#technologies-section > .technologies > .technology > .button-section > a{
+    padding: 10px;
+    margin: auto;
+    border: solid 2px var(--primary);
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--primary);
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+
+#technologies-section > .technologies > .technology > .button-section > a:hover{
+    background-color: var(--primary-transparent);
+}
+
+#technologies-section > .technologies > .technology > .technology-description{
+    display: grid;
+    /* border: steelblue 2px solid; */
+}
+
+#technologies-section > .technologies > .technology > .technology-description > p {
+    margin: auto;
+    /* border: burlywood 2px solid; */
+    width: 90%;
 }
 
 #technologies-section > p{
@@ -53,17 +89,22 @@
     overflow-wrap: break-word;
 }
 
-#technologies-section > .technologies > .technology > .technology-description{
-    display: grid;
-    border: steelblue 2px solid;
-}
 
-#technologies-section > .technologies > .technology > .technology-description > p {
-    margin: auto;
-    border: burlywood 2px solid;
-    width: 85%;
-}
 
+@media only screen and (max-width: 900px){
+    #technologies-section > .technologies{
+        width: 95vw;
+        gap: 0px;
+    }
+
+    #technologies-section > .technologies > .technology{
+        box-shadow: none;
+    }
+
+    #technologies-section > .technologies > .technology:hover{
+        box-shadow: none;
+    }
+}
 
 @media only screen and (max-width: 600px){
     #technologies-section > .technologies{
@@ -73,13 +114,17 @@
         gap: 20px;
     }
 
-    #technologies-section > .technologies {
-        margin-left: 5%;
+    #technologies-section > .technologies > .technology{
+        box-shadow: 10px 10px 15px 5px rgb(25, 25, 25);
     }
-    
+
+    #technologies-section > .technologies > .technology:hover{
+        box-shadow: 10px 10px 15px 5px rgb(50, 50, 50);
+    }
+
     #technologies-section > p{
-        width: 85vw;
-        margin-left: 5%;
+        width: 95vw;
+        margin: auto;
     }
 
     #technologies-section > .technologies-header{

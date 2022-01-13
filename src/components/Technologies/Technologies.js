@@ -17,53 +17,55 @@ export default function Technologies() {
             <br/>
 
             <div className="technologies">
-                <div className="technology techtwo">
+                <div className="technology">
                     <div className="icon-div">
                         <FaReact className="icon"/>
                     </div>  
                     <div className="technology-header">
-                        <h4>Front-End</h4>
+                        <h3>Front-End</h3>
                     </div>     
                     <div className="technology-description">
                         <p>
-                            Experience with React.js, Vue and Next.js
+                        I have extensive experience in using Javascript frameworks to beautify 
+                        and modularize my projects. I have a strong preference for React.js, but I have 
+                        also used Vue.js and Next.js.
                         </p>
                     </div>
                     <div className="button-section">
-                        <button>Read more </button>
+                        <a href='#project-section'>Read more</a>
                     </div>
                 </div>
-                <div className="technology techtwo">
+                <div className="technology">
                     <div className="icon-div">
                         <FaDatabase className="icon"/>
                     </div>
                     <div className="technology-header">
-                        <h4>Back-End</h4>
+                        <h3>Back-End</h3>
                     </div>    
                     <div className="technology-description">
                         <p>
-                           Experience with MongoDB, PostgreSQL, MySQL,
-                           Heroku, Docker 
+                            Due to being primarily Back-end based, I can utilize multiple technologies
+                            such as MongoDB, PostgreSQL, Node.js, MySQL, Heroku, Netlify, and Docker.
                         </p>
                     </div>
                     <div className="button-section">
-                        <button>Read more</button>
+                        <a href="#project-section">Read more</a>
                     </div>
                 </div>
-                <div className="technology techtwo">
+                <div className="technology">
                    <div className="icon-div">
                         <FaFigma className="icon"/>
                     </div> 
                     <div className="technology-header">
-                        <h4>UI/UX</h4>
+                        <h3>UI/UX</h3>
                     </div> 
                     <div className="technology-description">
                         <p>
-                            Experience with tools such as Figma and blah blah blah
+                            I have achieved success in the UI/UX field using schematic tools such as Figma.
                         </p>
                     </div>
                     <div className="button-section">
-                        <button>Read more </button>
+                        <a href="https://www.figma.com/">Read more</a>
                     </div>
                 </div>
             </div> 

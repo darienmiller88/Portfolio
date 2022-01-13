@@ -2,7 +2,7 @@ import React from 'react'
 import "./Projects.css"
 import { ProjectCardLeft, ProjectCardRight} from "../ProjectCard/ProjectCard"
 import SectionDivider from "../SectionDivider/SectionDivider"
-import projects from "../ProjectConstants/ProjectConstants"
+import projects from "../Constants/Constants"
 
 export default function Projects() {
     return (
