@@ -21,67 +21,64 @@
     cursor: pointer;
 }
 
-.card-wrapper:hover > .card-picture-shadow-left{
-    height: 100%;
-    box-shadow: -6px 0px 15px -1px black;
-    z-index: 1;
-}
-
-/* Shadowing effect for card with left aligned description*/
-.card-wrapper-left:hover > .card-description{
-    height: 80%;
-    box-shadow: none;
-}
-
-.card-wrapper-left:hover > .card-picture{
-    height: 100%;
-    box-shadow: 6px 0px 15px -1px black;    
-    z-index: 1;
-}
-/* Shadowing effect left aligned end */
-
-
-/* Shadowing effect for card with right aligned description*/
-.card-wrapper-right:hover > .card-description{
-    height: 80%;
-    box-shadow: none;
-}
-
-.card-wrapper-right:hover > .card-picture{
-    height: 100%;
-    box-shadow: -6px 0px 15px -1px black;    
-    z-index: 1;
-}
-/* Shadowing effect right aligned end*/
-
-
 .card-picture{
-    height: 80%;
+    height: 100%;
     background-color: red;
     border: 2px red solid;
     transition: 0.3s;
 }
 
 .card-description{
-    height: 100%;
+    height: 80%;
     background-color: blue;
     border: 2px blue solid;
     transition: 0.3s;
+    overflow-y: scroll;
 }
 
-.card-wrapper-left > .card-description{
-    box-shadow: -6px 0px 15px -1px black;
+.card-wrapper-left > .card-picture{
+    box-shadow: 6px 0px 15px -1px black;
+    z-index: 1;
 }
 
 .card-wrapper-right > .card-picture{
-    grid-area: picture;
+    grid-area: picture;    
+    box-shadow: -6px 0px 15px -1px black;    
 }
 
 .card-wrapper-right > .card-description{
-    box-shadow: 6px 0px 15px -1px black;    
     grid-area: description;
+}
+
+/* Shadowing effect for card with left aligned picture*/
+.card-wrapper-left:hover > .card-description{
+    height: 100%;
+    box-shadow: -6px 0px 15px -1px black;    
     z-index: 1;
 }
+
+.card-wrapper-left:hover > .card-picture{
+    height: 80%;    
+    box-shadow: none;
+}
+/* Shadowing effect left aligned end */
+
+
+/* Shadowing effect for card with right aligned picture*/
+.card-wrapper-right:hover > .card-description{
+    height: 100%;
+    box-shadow: 6px 0px 15px -1px black;    
+    z-index: 1;
+}
+
+.card-wrapper-right:hover > .card-picture{
+    height: 80%;
+    box-shadow: none; 
+}
+/* Shadowing effect right aligned end*/
+
+
+
 
 @media only screen and (min-width: 701px) {
     .card-wrapper-right{
@@ -92,14 +89,20 @@
 @media only screen and (max-width: 700px){
     .card-wrapper{
         grid-template-columns: none;
-        grid-template-rows: 60% auto;
+        grid-template-rows: 40% auto;
+        height: 500px;
     }
 
     .card-picture{
         height: 100%;
     }
 
-    .card-wrapper:hover > .card-description{
+    .card-description{
+        height: 100%;
+
+    }
+
+    .card-wrapper:hover > .card-picture{
         height: 100%;
         box-shadow: none;
     }
@@ -107,9 +110,23 @@
 
 @media only screen and (max-width: 400px){
     .card-wrapper{
+        grid-template-columns: none;
+        grid-template-rows: 40% auto;
         margin-left: 0%;
         margin: auto;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         width: 95%;
+        height: 500px;
+        border-radius: 15px;
+    }
+
+     .card-description{
+        height: 100%;
+        background-color: burlywood;
+        overflow-y: scroll;
+    }
+
+    .card-picture:hover{
+        height: 100%;
     }
 }
