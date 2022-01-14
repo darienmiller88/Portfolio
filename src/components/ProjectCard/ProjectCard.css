@@ -1,11 +1,12 @@
+
 .card-wrapper{
     display: grid;
-    width: 70vw;
-    height: 250px;
+    width: 80vw;
+    height: 350px;
     align-items: center;
-    margin-left: 15%;
+    margin: auto;
     margin-bottom: 25px;
-    border: 2px solid var(--primary);
+    /* border: 2px solid var(--primary); */
 }
 
 .card-wrapper-left{
@@ -77,8 +78,30 @@
 }
 /* Shadowing effect right aligned end*/
 
+.card-picture > img{
+    height: 100%;
+    width: 100%;
+}
 
+.card-description > .project-header{
+    font-size: 20px;
+    display: grid;
+    margin: auto;
+    border: 2px solid orange;
+    padding: 10px;
+}
 
+.card-description > .project-description{
+
+}
+
+.card-description > .project-technologies{
+
+}
+
+.card-description > .project-link{
+
+}
 
 @media only screen and (min-width: 701px) {
     .card-wrapper-right{
@@ -99,7 +122,6 @@
 
     .card-description{
         height: 100%;
-
     }
 
     .card-wrapper:hover > .card-picture{
