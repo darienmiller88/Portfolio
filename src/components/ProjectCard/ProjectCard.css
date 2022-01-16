@@ -9,111 +9,98 @@
     /* border: 2px solid var(--primary); */
 }
 
-.card-wrapper-left{
-    grid-template-columns: 60% auto;
-}
-
-.card-wrapper-right{    
-    grid-template-areas: "picture" "description";
-    grid-template-columns: auto 60%;
-}
-
 .card-wrapper:hover{
     cursor: pointer;
 }
 
 .card-picture{
     height: 100%;
-    background-color: red;
-    border: 2px red solid;
     transition: 0.3s;
 }
 
 .card-description{
+    display: grid;
     height: 80%;
-    background-color: blue;
-    border: 2px blue solid;
+    border: 2px var(--primary) solid;
     transition: 0.3s;
     overflow-y: scroll;
 }
-
-.card-wrapper-left > .card-picture{
-    box-shadow: 6px 0px 15px -1px black;
-    z-index: 1;
-}
-
-.card-wrapper-right > .card-picture{
-    grid-area: picture;    
-    box-shadow: -6px 0px 15px -1px black;    
-}
-
-.card-wrapper-right > .card-description{
-    grid-area: description;
-}
-
-/* Shadowing effect for card with left aligned picture*/
-.card-wrapper-left:hover > .card-description{
-    height: 100%;
-    box-shadow: -6px 0px 15px -1px black;    
-    z-index: 1;
-}
-
-.card-wrapper-left:hover > .card-picture{
-    height: 80%;    
-    box-shadow: none;
-}
-/* Shadowing effect left aligned end */
-
-
-/* Shadowing effect for card with right aligned picture*/
-.card-wrapper-right:hover > .card-description{
-    height: 100%;
-    box-shadow: 6px 0px 15px -1px black;    
-    z-index: 1;
-}
-
-.card-wrapper-right:hover > .card-picture{
-    height: 80%;
-    box-shadow: none; 
-}
-/* Shadowing effect right aligned end*/
 
 .card-picture > img{
     height: 100%;
     width: 100%;
 }
 
+
+
 .card-description > .project-header{
-    font-size: 20px;
     display: grid;
+    /* border: 2px solid firebrick; */
+}
+
+.card-description > .project-header > p{
+    font-size: 30px;
+    font-weight: bold;
     margin: auto;
-    border: 2px solid orange;
-    padding: 10px;
+    color: var(--primary);
+}
+
+.card-description > .project-header > .project-divider{
+    width: 64px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    margin: auto;
 }
 
 .card-description > .project-description{
+    display: grid;
+    color: var(--primary);
+    /* border: 2px solid khaki; */
+}
 
+.card-description > .project-description > p{
+    width: 80%;
+    margin: auto;
 }
 
 .card-description > .project-technologies{
+    display: flex;
+    /* border: 2px solid white; */
+    color: var(--primary);
+    /* height: fit-content; */
+}
 
+.card-description > .project-technologies > .project-technology{
+    margin: auto;
+    margin-right: 10px;
 }
 
 .card-description > .project-link{
-
+    display: grid;
+    /* border: lightcoral 2px solid; */
+    color: var(--primary);
 }
 
-@media only screen and (min-width: 701px) {
-    .card-wrapper-right{
-        grid-template-areas: "description picture";
-    }
+.card-description > .project-link > a{
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--primary);
+    text-decoration: none;
+    width: fit-content;
 }
+
 
 @media only screen and (max-width: 700px){
     .card-wrapper{
         grid-template-columns: none;
         grid-template-rows: 40% auto;
         height: 500px;
+        border: firebrick 2px solid;
+
     }
 
     .card-picture{
@@ -140,11 +127,11 @@
         width: 95%;
         height: 500px;
         border-radius: 15px;
+        border: firebrick 2px solid;
     }
 
      .card-description{
         height: 100%;
-        background-color: burlywood;
         overflow-y: scroll;
     }
 

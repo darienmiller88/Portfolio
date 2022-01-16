@@ -13,11 +13,12 @@ Scrollbar styling
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: var(--primary); 
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: var(--primary-transparent); 
 }
