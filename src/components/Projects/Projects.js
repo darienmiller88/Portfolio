@@ -34,7 +34,7 @@ export default function Projects() {
                 })
             }
 
-            <SectionDivider/>
+            <SectionDivider addMargin={true}/>
         </div>
     )
 }

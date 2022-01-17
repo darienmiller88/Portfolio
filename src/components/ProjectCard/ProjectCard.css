@@ -64,16 +64,24 @@
     margin: auto;
 }
 
-.card-description > .project-technologies{
-    display: flex;
-    /* border: 2px solid white; */
+.card-description > .stack{
+    font-weight: bold;
     color: var(--primary);
-    /* height: fit-content; */
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    /* border: violet 2px solid; */
 }
 
-.card-description > .project-technologies > .project-technology{
+.card-description > .project-technologies{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: fit-content;
+    /* border: 2px solid white; */
+    color: var(--primary);
     margin: auto;
-    margin-right: 10px;
+    /* height: fit-content; */
 }
 
 .card-description > .project-link{
@@ -83,24 +91,26 @@
 }
 
 .card-description > .project-link > a{
-    border: 2px solid var(--primary);
-    border-radius: 5px;
+    padding: 10px;
     margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: var(--primary);
+    border: solid 2px var(--primary);
     text-decoration: none;
-    width: fit-content;
+    border-radius: 10px;
+    color: var(--primary);
+    background-color: transparent;
+    transition: 0.3s;
 }
 
+.card-description > .project-link > a:hover{
+    transform: translateY(-5px);
+    background-color: var(--primary-transparent);
+}
 
 @media only screen and (max-width: 700px){
     .card-wrapper{
         grid-template-columns: none;
         grid-template-rows: 40% auto;
         height: 500px;
-        border: firebrick 2px solid;
-
     }
 
     .card-picture{
@@ -121,13 +131,10 @@
     .card-wrapper{
         grid-template-columns: none;
         grid-template-rows: 40% auto;
-        margin-left: 0%;
         margin: auto;
         margin-bottom: 40px;
         width: 95%;
         height: 500px;
-        border-radius: 15px;
-        border: firebrick 2px solid;
     }
 
      .card-description{

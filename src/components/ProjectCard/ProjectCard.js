@@ -3,8 +3,6 @@ import "./ProjectCardPicLeft.css"
 import "./ProjectCardPicRight.css"
 import "./ProjectCard.css"
 
-// import { BsGithub } from 'react-icons/bs';
-
 export const ProjectDescription = (props) => {
     return(
         <>
@@ -23,11 +21,12 @@ export const ProjectDescription = (props) => {
                         props.projectData.description
                     }
                 </p>
-            </div>                
+            </div>        
+            <div className='stack'>Tech Stack</div>        
             <div className='project-technologies'>
                 {
-                    props.projectData.stack.map(technology => {
-                        return <div className='project-technology'>{technology}</div>
+                    props.projectData.stack.map((technology, i) => {
+                        return <div className='project-technology' key={i}>{technology}</div>
                     })
                 }
             </div>
@@ -43,10 +42,10 @@ export const ProjectDescription = (props) => {
 //Project picture on the left
 export const ProjectCardLeft = (projectData) => {        
     return (
-        <div className="card-wrapper card-wrapper-left">
-            <div className="card-picture">
+        <div className="card-wrapper card-wrapper-left"> 
+            <a className="card-picture" href={projectData.source}>
                 <img alt='project' src={projectData.picture}/>
-            </div>
+            </a>
             <div className="card-description">
                 <ProjectDescription projectData={projectData}/>
             </div>
@@ -55,15 +54,15 @@ export const ProjectCardLeft = (projectData) => {
 }
 
 //Project picture on the right. THIS ONE IS THE ISSUE!!!
-export const ProjectCardRight = (props) => {
+export const ProjectCardRight = (projectData) => {
     return (
         <div className="card-wrapper card-wrapper-right">
             <div className="card-description">
-                <ProjectDescription projectData={props}/>
+                <ProjectDescription projectData={projectData}/>
             </div> 
-            <div className="card-picture">
-                <img alt='project' src={props.picture}/>
-            </div>
+            <a className="card-picture" href={projectData.source}>
+                <img alt='project' src={projectData.picture}/>
+            </a>
         </div>
     )
 }

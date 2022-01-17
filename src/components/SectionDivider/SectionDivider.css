@@ -3,6 +3,10 @@
     height: 6px;
     border-radius: 10px;
     background-color: var(--primary);
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.margin{
+    margin-left: 15%;
 }
