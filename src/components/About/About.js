@@ -7,7 +7,7 @@ export default function About() {
     return (
         <div id="about-section">
             <div className="about-header" style={{color: "white"}}>
-                <span className="number">01.</span> About me <hr width="70%"/>
+                About me <hr width="70%"/>
             </div>
 
             <div className="about-me">
@@ -33,7 +33,7 @@ export default function About() {
                     <img src={myPic}  alt="me" id="pic"/>
                 </div>
             </div>
-            <SectionDivider/>
+            <SectionDivider addMargin={false}/>
         </div>
     )
 }

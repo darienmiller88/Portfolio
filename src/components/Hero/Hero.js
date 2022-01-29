@@ -5,7 +5,7 @@ import SectionDivider from '../SectionDivider/SectionDivider'
 export default function Hero() {
     return (
         <div id="hero-section">
-            <div className="hi">Hello! My name is</div>
+            <div className="hi">Welcome! My name is</div>
             <div className="name" >
                 Darien Miller.
             </div>
@@ -22,7 +22,7 @@ export default function Hero() {
             <a className="github-link" href="https://github.com/darienmiller88">
                 Check out my projects!
             </a>
-            <SectionDivider/>
+            <SectionDivider addMargin={false}/>
         </div>
     )
 }

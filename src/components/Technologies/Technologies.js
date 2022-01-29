@@ -8,7 +8,7 @@ export default function Technologies() {
     return (
         <div id="technologies-section">
             <div className="technologies-header" style={{color: "white"}}>
-                <span className="number">02.</span> Technologies <hr width="75%"/>
+                Technologies <hr width="75%"/>
             </div>
             <p>
                 I've worked with a number of tools to aid in software development, including both
@@ -24,6 +24,7 @@ export default function Technologies() {
                             icon={technology.icon}
                             header={technology.header}
                             description={technology.description}
+                            link={technology.link}
                         />
                     })
                 }

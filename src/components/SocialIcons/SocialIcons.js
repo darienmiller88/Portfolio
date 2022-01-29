@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsInstagram, BsLinkedin, BsGithub, BsEnvelope } from 'react-icons/bs';
+import { BsLinkedin, BsGithub, BsEnvelope } from 'react-icons/bs';
 
 export default function SocialIcons() {
     return (
@@ -7,9 +7,9 @@ export default function SocialIcons() {
             <li className="nav-item active">
                 <a className="nav-link" href="https://github.com/darienmiller88"> <BsGithub className="social-icon"/></a>
             </li>
-            <li className="nav-item active">
+            {/* <li className="nav-item active">
                 <a className="nav-link" href="https://www.instagram.com/the_hooded_one97/?hl=en"> <BsInstagram className="social-icon"/></a>
-            </li>
+            </li> */}
             <li className="nav-item active">
                 <a className="nav-link" href="https://www.linkedin.com/in/darien-miller"> <BsLinkedin className="social-icon"/></a>
             </li>

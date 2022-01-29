@@ -19,9 +19,9 @@ export default function Home() {
             <NavBar/>
             <Hero/>
             <About/>            
-            <Technologies/>
-            <Projects/>
+            <Technologies/>            
             <Work/>
+            <Projects/>
             <Footer/>
         </div>
     )

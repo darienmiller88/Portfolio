@@ -3,7 +3,9 @@ Scrollbar styling
 */
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 4px;    
+    height: 4px;  
+    transition: 0.3s;
 }
 
 /* Track */
@@ -15,7 +17,6 @@ Scrollbar styling
 ::-webkit-scrollbar-thumb {
     background: var(--primary); 
     border-radius: 10px;
-    transition: 0.3s;
 }
 
 /* Handle on hover */
