@@ -1,14 +1,16 @@
 import React from 'react'
 import "./About.css"
-import myPic from "../../img/me2.PNG"
+import myPic from "../../img/about-me.PNG"
 import SectionDivider from "../SectionDivider/SectionDivider"
+import Horizontal from "../Horizontal/Horizontal"
 
 export default function About() {
     return (
         <div id="about-section">
             <div className="about-header" style={{color: "white"}}>
-                About me <hr width="70%"/>
+                About me 
             </div>
+            <Horizontal />
 
             <div className="about-me">
                 <div className="about-me-description">

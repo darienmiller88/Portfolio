@@ -1,5 +1,19 @@
-#work-section > .work-header{
-    margin-left: 15%;
-    font-size: 40px;
+#work-section > .work-header{   
+    margin: auto;
+    width: fit-content;
+    font-size: 30px;
     font-weight: bold;
+    /* border: 2px solid red; */
+}
+
+@media only screen and (min-width: 992px){
+    #work-section > .work-header{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #work-section > .work-header{
+        font-size: 60px;
+    }
 }

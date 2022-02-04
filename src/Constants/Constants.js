@@ -39,19 +39,23 @@ export const technologies = [
     {
         icon: <FaReact className='icon'/>,
         header: "Front-End",
-        description: "I have extensive experience in using Javascript frameworks to beautify and modularize my projects. I have a strong preference for React.js, but I have also used Vue.js and Next.js.",
+        description: "I have extensive experience in using Javascript frameworks to beautify and " + 
+        "modularize my projects. I have a strong preference for React.js, but I have also successfully " +
+        "used Vue.js and Next.js.",
         link: "#project-section"
     }, 
     {
         icon: <FaDatabase className='icon'/>,
         header: "Back-End",
-        description: "Due to being primarily Back-end based, I can utilize multiple technologies such as MongoDB, PostgreSQL, Node.js, MySQL, Heroku, Netlify, and Docker.",
+        description: "Due to being primarily Back-end based, I can utilize multiple technologies such as " +
+        "MongoDB, PostgreSQL, Node.js, MySQL, Heroku, Netlify, and Docker.",
         link: "#project-section"
     },
     {
         icon: <FaFigma className='icon'/>,
         header: "UI/UX",
-        description: "I have achieved success in the UI/UX field using schematic tools such as Figma.",
+        description: "I have achieved success in the UI/UX field using schematic tools such as Figma to " + 
+        "to design the front ends of several of my projects, including this website.",
         link: "https://www.figma.com/"
     }
 ]
@@ -61,7 +65,7 @@ export const work = [
         business: "Administration for Child Services",
         position: "Summer Intern",
         description: [
-            "Worked as Office Aide and trainee for the buildings’ Information Technology services",
+            "Worked as Office Aide and trainee for the buildings’ Information Technology services.",
             "Performed installations of printers, personal computers for many employees, and created " + 
             "office-wide Local Area Networks."
         ],
@@ -72,7 +76,7 @@ export const work = [
         business: "Digital Girl, Inc.",
         position: "Computer Science Tutor",
         description: [
-            "Worked with a small, private company to support its goal to encourage young students to pursue " +
+            "Worked with a grassroots company to support its goal to encourage young students to pursue " +
             "computer science.",
             "Observed behavior for approximately twenty students and delivered insight to organization" +
             "director of each student’s strengths and weaknesses.",

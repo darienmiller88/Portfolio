@@ -1,26 +1,38 @@
-#about-section{
+/* #about-section{
     margin-left: 15%;
-}
+} */
 
 #about-section > .about-header{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
+    margin: auto;
+    width: fit-content;
 }
 
-.about-me{
+#about-section > .about-me{
     display: grid;
-    grid-template-columns: 55% auto;
-    gap: 5%;
-    width: 80%;
+    grid-template-areas: "description" "picture";
+    margin: auto;
+    background-color: var(--navy);
+    /* grid-template-columns: 55% auto; */
+    /* gap: 5%; */
+    width: 80vw;
+    /* border: var(--primary) 2px solid; */
+    box-shadow: 10px 10px 8px rgb(0, 0, 0);
 }
 
-.about-me-description{
+#about-section > .about-me > .about-me-description{
     color: mintcream;
     overflow-wrap: break-word;
+    grid-area: description;
 } 
 
 #about-section > .about-me > .about-me-description > p{
-    color: rgb(190, 190, 190);
+    color: white;
+    /* border: turquoise 2px solid; */
+    width: 80%;
+    margin: auto;
+    padding: 15px 0px;
 }
 
 #about-section > .about-me > .about-me-description > p > a {
@@ -42,26 +54,72 @@ a:active {
     background-size: 100% 0.1em;
 }
 
-#pic{
-    max-width: 80%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px var(--secondary) solid;
+#about-section >.about-me > .my-pic-div{    
+    display: grid;
+    grid-area: picture;
+}
+
+#about-section >.about-me > .my-pic-div > img{
+    width: 100%;
     transition: 0.5s;
     margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-#pic:hover{
+/* #about-section >.about-me > .my-pic-div >:hover{
     border: 2px var(--primary) solid;
+} */
+
+
+/* For larger phones */
+@media only screen and (min-width: 574px){
+    #about-section >.about-me > .my-pic-div > img{
+        width: 80%;
+        height: 80%;
+    }
 }
 
-@media only screen and (max-width: 700px) {
-    .about-me{
-        display: initial;
+@media only screen and (min-width: 768px){
+    #about-section > .about-me{
+        grid-template-areas: "picture description";
+        grid-template-columns: 50% auto;
+        width: 90vw;
     }
 
-    .my-pic-div::before{
-        content: "\a";
-        white-space: pre;
+    #about-section > .about-me > .my-pic-div > img{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #about-section > .about-me{
+        grid-template-columns: 45% auto;
+        width: 70vw;
+    }
+
+    #about-section > .about-me > .my-pic-div > img{
+        height: 600px;
+    }
+
+    #about-section > .about-me > .about-me-description > p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    #about-section > .about-me > .about-me-description > p{
+        font-size: 30px;
+    }
+
+    #about-section > .about-me > .my-pic-div > img{
+        height: 100%;
+    }
+
+    #about-section > .about-header{
+        font-size: 60px;
     }
 }

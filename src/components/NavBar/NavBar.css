@@ -67,11 +67,33 @@ nav{
     background-color: var(--secondary-transparent)
 }
 
-@media only screen and (max-width: 991px) {
-    
+@media only screen and (min-width: 1400px) {
+    .link{
+        font-size: 30px;
+    }
+
+    #resume{
+        font-size: 30px;
+        border: solid 4px var(--primary);
+    }
+
+    #logo{
+        height: 80px;
+        width: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #logo:hover{
+        height: 90px;
+    }
+
+    .social-icon{
+        font-size: 40px;
+    }
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
     #logo{
         margin-left: 1rem;
     }
@@ -79,4 +101,4 @@ nav{
     nav{
         background-color: var(--secondary);
     }
-}
+} */

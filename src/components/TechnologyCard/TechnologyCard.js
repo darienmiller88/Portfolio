@@ -8,7 +8,7 @@ export default function TechnologyCard(props) {
                 { props.icon }
             </div>
             <div className="technology-header">
-                <h3>{ props.header }</h3>
+                { props.header }
             </div>    
             <div className="technology-description">
                 <p>

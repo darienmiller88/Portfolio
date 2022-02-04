@@ -5,15 +5,8 @@
     border-radius: 10px;
     color: var(--primary);
     border: solid 2px var(--primary);
-    /* background-color: white; */
     transition: 0.5s;
     box-shadow: 10px 10px 15px 5px rgb(25, 25, 25);
-}
-
-.technology-card:hover{
-    cursor: pointer;
-    transform: translateY(-10px);
-    box-shadow: 10px 10px 25px 5px rgb(50, 50, 50);
 }
 
 .technology-card > .icon-div, .technology-header, .technology-description, .button-section {
@@ -25,7 +18,7 @@
     margin: auto;
 }
 
-.technology-card > .technology-header > h3{
+.technology-card > .technology-header{
     margin: auto;
 }
 
@@ -45,26 +38,55 @@
     transition: 0.5s;
 }
 
-.technology-card > .button-section > a:hover{
-    background-color: var(--primary-transparent);
-}
 
-@media only screen and (max-width: 900px){
+@media only screen and (min-width: 768px){
     .technology-card{
         box-shadow: none;
+    }
+   
+}
+
+@media only screen and (min-width: 992px){
+    .technology-card{
+        box-shadow: 10px 10px 10px rgb(0, 0, 0);
     }
 
     .technology-card:hover{
-        box-shadow: none;
+        cursor: pointer;
+        transform: translateY(-10px);
+        box-shadow: 10px 10px 10px  rgb(50, 50, 50);
     }
+    
+    .technology-card > .button-section > a:hover{
+        background-color: var(--primary-transparent);
+    }
+
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 1300px){
     .technology-card{
-        box-shadow: 10px 10px 15px 5px rgb(25, 25, 25);
+        height: 700px;
     }
 
-     .technology-card:hover{
-        box-shadow: 10px 10px 15px 5px rgb(50, 50, 50);
+    .technology-card > .icon-div{
+        padding: 10px 0px;
+    }
+
+    .technology-card > .technology-header{
+        font-size: 40px;
+        padding: 10px 0px;
+    }
+
+    .technology-card > .icon-div > .icon{
+        font-size: 80px;
+    }
+
+    .technology-card > .technology-description{
+        font-size: 30px;
+    }
+
+    .technology-card > .button-section > a{
+        font-size: 30px;
+        border: 4px solid var(--primary);
     }
 }

@@ -2,14 +2,16 @@ import React from 'react'
 import "./Technologies.css"
 import SectionDivider from "../SectionDivider/SectionDivider"
 import TechnologyCard from "../TechnologyCard/TechnologyCard"
+import Horizontal from '../Horizontal/Horizontal'
 import { technologies } from "../../Constants/Constants"
 
 export default function Technologies() {
     return (
         <div id="technologies-section">
             <div className="technologies-header" style={{color: "white"}}>
-                Technologies <hr width="75%"/>
+                Technologies I've used
             </div>
+            <Horizontal />
             <p>
                 I've worked with a number of tools to aid in software development, including both
                 Front-End and Back-End tools.

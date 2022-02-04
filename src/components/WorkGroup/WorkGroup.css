@@ -3,12 +3,11 @@
     width: 90vw;
     height: fit-content;
     margin: auto;
-    /* border: 2px solid tomato; */
 }
 
 .work-titles{
     display: flex;
-    overflow-x: scroll;
+    overflow-x: scroll;   
 }
 
 .work-title{
@@ -23,11 +22,11 @@
 .work-title-active{
     font-weight: bold;
     border: var(--primary) 2px solid;
-    background-color: var(--primary-transparent);
+    /* background-color: var(--primary-transparent); */
 }
 
 .work-description{
-    /* padding: 15px; */
+    padding-top: 15px;
     padding-left: 15px;
     color: var(--primary);
     /* border: 2px solid white; */
@@ -62,12 +61,7 @@
     margin-bottom: 10px
 }
 
-/* Display For smaller laptops */
-@media only screen and (min-width: 992px)  {
-    .work-group{
-        width: 75vw;
-    }
-}
+
 
 /* Display For Tablets */
 @media only screen and (min-width: 768px)  {
@@ -87,5 +81,37 @@
         padding: 10px 10px;
         height: fit-content;
         width: 100%;
+    }
+
+    .work-description{
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px)  {
+    .work-group{
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .work-title{
+        font-size: 30px;
+    }
+
+    .work-description > .business-name{
+        font-size: 40px;
+    }
+
+    .work-description > .year-start-end{
+        font-size: 30px;
+    }
+
+    .work-description > .position{
+        font-size: 25px;
+    }
+
+    .work-description > ul > li{
+        font-size: 25px;
     }
 }
