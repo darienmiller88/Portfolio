@@ -1,5 +1,5 @@
 import React, {  useRef, useState } from 'react'
-import SectionDivider from "../SectionDivider/SectionDivider"
+import SectionDivider from "../../components/SectionDivider/SectionDivider"
 import "./Contact.css"
 
 export default function Contact() {

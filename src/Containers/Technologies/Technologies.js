@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Technologies.css"
-import SectionDivider from "../SectionDivider/SectionDivider"
-import TechnologyCard from "../TechnologyCard/TechnologyCard"
-import Horizontal from '../Horizontal/Horizontal'
+import SectionDivider from "../../components/SectionDivider/SectionDivider"
+import TechnologyCard from "../../components/TechnologyCard/TechnologyCard"
+import Horizontal from "../../components/Horizontal/Horizontal"
 import { technologies } from "../../Constants/Constants"
 
 export default function Technologies() {
