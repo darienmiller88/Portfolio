@@ -1,0 +1,134 @@
+#contact_section{
+    width: 90vw;
+    /* border: 2px red solid; */
+    margin: auto;
+}
+
+#contact_section > .contact_section_header{
+    color: white;
+    margin: auto;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contact_section > .contact_input{
+    display: grid;
+    /* border: 2px yellow solid;     */
+    font-size: 20px;
+    margin: 20px 0px;
+    /* width: 100%; */
+}
+
+#contact_section > .contact_input > input{
+    border: 2px solid var(--primary);
+    background-color: var(--transparent);
+    color: var(--primary);
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+::placeholder { 
+    color: white;
+    font-style: italic;
+}  
+
+#contact_section > .contact_textarea{
+    display: grid;
+    /* border: 2px yellow solid; */
+    margin: auto;
+    margin: 20px 0px;
+    font-size: 20px;
+
+}
+
+#contact_section > .contact_textarea > textarea{
+    background-color: var(--transparent);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    color: var(--primary);
+}
+
+#contact_section > .send_message_button_wrapper{
+    /* border: 2px solid orange; */
+    width: fit-content;
+    margin: auto;
+}
+
+#contact_section > .send_message_button_wrapper > .send_message_button{
+    margin: auto;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background-color: var(--transparent);
+    border-radius: 10px;
+    padding: 15px 15px;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+    #contact_section{
+        width: 85vw;
+    }
+
+    #contact_section > .contact_section_header{
+        font-size: 40px
+    }
+
+    #contact_section > .contact_input > input{
+        font-size: 30px;
+    }
+
+    #contact_section > .contact_textarea > textarea{
+        font-size: 30px;
+    }
+
+    
+    #contact_section > .send_message_button_wrapper > .send_message_button{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #contact_section{
+        width: 65vw;
+    }
+
+    #contact_section > .contact_input > input{
+        font-size: 20px;
+    }
+
+    #contact_section > .contact_textarea > textarea{
+        font-size: 20px;
+    }
+
+    #contact_section > .send_message_button_wrapper > .send_message_button{
+        margin: 20px 0px;
+        font-size: 20px;
+    }
+
+
+    #contact_section > .send_message_button_wrapper > .send_message_button:hover{
+        background-color: var(--primary-transparent);
+    }
+}
+
+@media screen and (min-width: 1500px){
+    #contact_section > .contact_section_header{
+        font-size: 60px;
+    }
+
+    #contact_section > .contact_input > input{
+        font-size: 35px;
+    }
+
+    #contact_section > .contact_textarea > textarea{
+        font-size: 35px;
+    }
+
+    #contact_section > .send_message_button_wrapper > .send_message_button{
+        margin: 20px 0px;
+        font-size: 35px;
+    }
+
+}

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import "./NavBar.css"
-import pdf from "../../Documents/resume.pdf"
+import pdf from "../../Documents/resume2022.pdf"
 import logo from "../../img/logo.png"
 import SocialIcons from '../SocialIcons/SocialIcons'
 import isCollapsed from '../IsCollapsed/IsCollapsed'
@@ -66,7 +66,7 @@ export default function NavBar() {
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" id="resume" href={pdf}> Resume </a>
+                    <a className="nav-link" id="resume" href={pdf}  target="_blank" rel="noreferrer noopener"> Resume </a>
                 </li>
             </ul>
         )

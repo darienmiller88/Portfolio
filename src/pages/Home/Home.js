@@ -2,11 +2,12 @@ import React, { useEffect } from 'react'
 import "./Home.css"
 import "../../components/Scrollbar/Scrollbar.css"
 import About from "../../components/About/About"
-import Hero from '../../components/Hero/Hero'
-import Projects from "../../components/Projects/Projects"
-import Work from '../../components/Work/Work'
+import Hero from '../../Containers/Hero/Hero'
+import Projects from "../../Containers/Projects/Projects"
+import Work from '../../Containers/Work/Work'
 import Technologies from "../../components/Technologies/Technologies"
-import Footer from "../../components/Footer/Footer"
+import Contact from '../../components/Contact/Contact'
+import Footer from "../../Containers/Footer/Footer"
 import NavBar from '../../components/NavBar/NavBar'
 
 export default function Home() {
@@ -16,13 +17,14 @@ export default function Home() {
 
     return (
         <div>
-            <NavBar/>
-            <Hero/>
-            <About/>            
-            <Technologies/>            
-            <Work/>
+            <NavBar />
+            <Hero />
+            <About />            
+            <Technologies />            
+            <Work />
             <Projects/>
-            {/* <Footer/> */}
+            <Contact />
+            <Footer />
         </div>
     )
 }

@@ -7,7 +7,7 @@ import Horizontal from "../Horizontal/Horizontal"
 export default function About() {
     return (
         <div id="about-section">
-            <div className="about-header" style={{color: "white"}}>
+            <div className="header">
                 About me 
             </div>
             <Horizontal />

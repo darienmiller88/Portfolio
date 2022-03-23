@@ -1,0 +1,19 @@
+/* #work-section > .work-header{   
+    margin: auto;
+    width: fit-content;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid red;
+} */
+
+/* @media only screen and (min-width: 992px){
+    #work-section > .work-header{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    #work-section > .work-header{
+        font-size: 80px;
+    }
+} */

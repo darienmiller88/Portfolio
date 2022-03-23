@@ -25,16 +25,9 @@
     color: var(--primary);
 }
 
-.social-icon{
-    margin-left: 2rem;
-    font-size: 20px;
-    transition: 0.5s;
-}
-
-.social-icon:hover{
-    color: var(--primary);
-    transform: translateY(-5px);
-}
+/* .social-icon{
+    display: none;
+} */
 
 #logo{
     margin-left: 2.5rem;
@@ -67,7 +60,8 @@ nav{
     background-color: var(--secondary-transparent)
 }
 
-@media only screen and (min-width: 1400px) {
+/* Large displays */
+@media only screen and (min-width: 1600px) {
     .link{
         font-size: 30px;
     }
@@ -92,13 +86,3 @@ nav{
         font-size: 40px;
     }
 }
-
-/* @media only screen and (max-width: 500px) {
-    #logo{
-        margin-left: 1rem;
-    }
-
-    nav{
-        background-color: var(--secondary);
-    }
-} */

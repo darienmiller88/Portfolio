@@ -6,6 +6,32 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.header{
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+    width: fit-content;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .header{
+        font-size: 45px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .header{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .header{
+        font-size: 60px;
+    }
+}
+
 .number{
     color: var(--primary);
 }

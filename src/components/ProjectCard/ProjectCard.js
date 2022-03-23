@@ -1,68 +1,49 @@
-import React from 'react'
-import "./ProjectCardPicLeft.css"
-import "./ProjectCardPicRight.css"
+import React from 'react';
 import "./ProjectCard.css"
+import { BsGithub } from 'react-icons/bs';
+import { FaExternalLinkAlt } from "react-icons/fa"
+import Carousel from '../Carousel/Carousel';
 
-export const ProjectDescription = (props) => {
-    return(
-        <>
-            <div className='project-header'>
-                <p>
-                    {
-                        props.projectData.projectTitle
-                    }
-                </p> 
-                <div className="project-divider"></div>
-            </div>
-           
-            <div className='project-description'>
-                <p>
-                    {
-                        props.projectData.description
-                    }
-                </p>
-            </div>        
-            <div className='stack'>Tech Stack</div>        
-            <div className='project-technologies'>
-                {
-                    props.projectData.stack.map((technology, i) => {
-                        return <div className='project-technology' key={i}>{technology}</div>
-                    })
-                }
-            </div>
-            <div className='project-link'>
-                <a href={props.projectData.source}>
-                    Source
-                </a>
-            </div>
-        </>
-    )
-}
+export default function ProjectCard({ project, projectNumber }) {        
+    console.table("project number:", projectNumber)
 
-//Project picture on the left
-export const ProjectCardLeft = (projectData) => {        
     return (
-        <div className="card-wrapper card-wrapper-left"> 
-            <a className="card-picture" href={projectData.source}>
-                <img alt='project' src={projectData.picture}/>
-            </a>
-            <div className="card-description">
-                <ProjectDescription projectData={projectData}/>
+        <div className={`project_card ${ projectNumber % 2 === 0 ? "project_card_picture_left" : "project_card_picture_right"}`}>
+            <Carousel projectImages={project.pictures} projectNumber={projectNumber}/>
+            <div className='project_description_div'>
+                <div className='project_title_wrapper'>
+                    <div className='project_title'>
+                        <div className='project_title_text'>
+                            { project.projectTitle }
+                        </div>
+                    </div>
+
+                    <div className='project_links_wrapper'>
+                        <a href={ project.githubLink } target="_blank" rel="noreferrer noopener">
+                            <BsGithub className='project_link'/>
+                        </a>
+                        <a href={ project.projectLink } target="_blank" rel="noreferrer noopener">
+                            <FaExternalLinkAlt className='project_link' />
+                        </a>
+                    </div>
+                </div>
+                
+                <div className='project_description'>
+                    {
+                        project.description
+                    }    
+                </div> 
+                    
+                <div className='tech_stack_wrapper'>
+                   <div className='tech_stack'>
+                        {
+                            project.stack.map((techonology, i) => {
+                                return <div className='technology' key={i}> {techonology} </div>
+                            })
+                        } 
+                    </div>
+                </div>
             </div>
         </div>
-    )
-}
-
-//Project picture on the right. THIS ONE IS THE ISSUE!!!
-export const ProjectCardRight = (projectData) => {
-    return (
-        <div className="card-wrapper card-wrapper-right">
-            <div className="card-description">
-                <ProjectDescription projectData={projectData}/>
-            </div> 
-            <a className="card-picture" href={projectData.source}>
-                <img alt='project' src={projectData.picture}/>
-            </a>
-        </div>
-    )
+    );
 }

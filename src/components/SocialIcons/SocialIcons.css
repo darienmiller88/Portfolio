@@ -1,0 +1,22 @@
+.social-icon{
+    font-size: 25px;
+}
+
+
+@media only screen and (min-width: 1200px){
+    .social-icon{
+        margin-left: 2rem;
+        transition: 0.5s;
+    }
+    
+    .social-icon:hover{
+        color: var(--primary);
+        transform: translateY(-5px);
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .social-icon{
+        font-size: 40px;
+    }
+}

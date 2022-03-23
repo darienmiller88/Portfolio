@@ -4,7 +4,7 @@ Scrollbar styling
 
 ::-webkit-scrollbar {
     width: 4px;    
-    height: 2px;  
+    height: 0px;  
     transition: 0.3s;
 }
 

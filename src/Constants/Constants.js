@@ -1,37 +1,56 @@
-import pic1 from "../img/project1.PNG"
-import pic2 from "../img/project2.png"
-import pic3 from "../img/project3.png"
-import pic4 from "../img/project4.PNG"
+import twidder1 from "../img/twidder1.PNG"
+
+import gameon1 from "../img/gameon1.PNG"
+import gameon2 from "../img/gameon2.PNG"
+import gameon3 from "../img/gameon3.PNG"
+import gameon4 from "../img/gameon4.png"
+import gameon5 from "../img/gameon5.PNG"
+
+import taskscheduler1 from "../img/taskscheduler.png"
+import taskscheduler2 from "../img/taskscheduler2.png"
+import taskscheduler3 from "../img/taskscheduler3.png"
+
+import messenger1 from "../img/messenger1.png"
+import messenger2 from "../img/messenger2.png"
+import messenger3 from "../img/messenger3.png"
+import messenger4 from "../img/messenger4.png"
+import messenger5 from "../img/messenger5.png"
+
 import { FaReact, FaDatabase, FaFigma } from 'react-icons/fa'
 
 export const projects = [
     {
-        picture: pic1,
+        pictures: [gameon1, gameon2, gameon3, gameon4, gameon5],
         projectTitle: "GameOn",
         description: "React web application in a team of 3, allowing users of similar gaming tastes to connect with each other.",
-        stack: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
-        source: "https://github.com/Land-Sharks/GameOn"
+        stack: ["React", "Node", "Express", "PostgreSQL"],
+        githubLink: "https://github.com/Land-Sharks/GameOn",
+        projectLink: ""
     },
     {
-        picture: pic2,
+        pictures: [messenger1, messenger2, messenger3, messenger4, messenger5],
         projectTitle: "Messenger",
         description: "Messenger application built using HTML, CSS, Javascript, and Go.",
         stack: ["HTML", "CSS", "Javascript", "Go", "Gorm"],
-        source: "https://github.com/darienmiller88/Golang-Messenger"
+        githubLink: "https://github.com/darienmiller88/Golang-Messenger",
+        projectLink: ""
     },
     {
-        picture: pic3,
+        pictures: [taskscheduler1, taskscheduler2, taskscheduler3],
         projectTitle: "Task Scheduler",
         description: "Task scheduler built for a client that allows users to set different types of reminders.",
         stack: ["React.js", "Go", "MongoDB", "Netlify"],
-        source: "https://github.com/darienmiller88/Task-Scheduler"
+        githubLink: "https://github.com/darienmiller88/Task-Scheduler",
+        projectLink: "https://thetaskscheduler.netlify.app/"
     },
     {
-        picture: pic4,
+        pictures: [twidder1],
         projectTitle: "Twidder",
         description: "Full stack Twitter clone built using React and Go.",
-        stack: ["React.js", "Go", "Gorm", "PostgreSQL", "Netlify"],
-        source: "https://github.com/darienmiller88/Better-Twitter-Clone"
+        stack: ["React", "Go", "Gorm", "PostgreSQL", "Netlify"],
+        githubLink: "https://github.com/darienmiller88/Better-Twitter-Clone",
+        projectLink: ""
+
     }
 ]
 
@@ -124,4 +143,81 @@ export const work = [
         yearStart: "August 2020",
         yearEnd: "Present"
     }
+]
+
+export const olderProjects = [
+    {
+        projectName: "Twidder",
+        description: "A basic, full stack implementation of Twitter that allows users to post \"Tweeds\" to " +
+        "a dashboard that is publicly availble to all users. ",
+        stack: ["Go", "MongoDB", "HTML", "CSS", "Javascript"],
+        githubLink: "https://github.com/darienmiller88/Twitter-clone"
+    },
+    {
+        projectName: "NASA: A Picture of the Day",
+        description: "Web Application to extract data from the NASA API and display them onto an interactive page",
+        stack: ["Go", "Gin", "HTML", "CSS"],
+        githubLink: "https://github.com/darienmiller88/NASA-API-Application" 
+    },
+    {
+        projectName: "Dance Movement",
+        description: "Guided a team through the process of building a full stack web application intended to " +
+        "retrieve small videos from a databse depicting dance moves, and posting it on a dashboard.",
+        stack: ["Node.js", "Express", "HTML", "CSS", "MySQL"],
+        githubLink: "https://github.com/darienmiller88/danceMovement" 
+    },
+    {
+        projectName: "Pong",
+        description: "A complete implementation of Pong using my own game engine, which comes completed with " +
+        "menus, a cpu demo, and 1 and 2 player modes.",
+        stack: ["C++", "SFML", "Visual Studio"],
+        githubLink: "https://github.com/darienmiller88/Pong-Online" 
+    },
+    {
+        projectName: "SFML Game Engine",
+        description: "A collection of classes, functions, and helpful utilities meant to aid in c++ game " + 
+        "development, which includes Animations, A Game State Manager, GUI elements, expressions, and a resource " +
+        "manager.",
+        stack: ["C++", "SFML", "Visual Studio"],
+        githubLink: "https://github.com/darienmiller88/SFML-Game-engine-framework-thingy" 
+    },
+    {
+        projectName: "Frogger",
+        description: "An attempt to remake the classic game frogger. ",
+        stack: ["C++", "SFML", "Visual Studio"],
+        githubLink: "https://github.com/darienmiller88/Twitter-clone" 
+    },
+    {
+        projectName: "C++ Data Structures",
+        description: "A collection of C++ implementations of the STL, which includes the Hashmap, Tree Map, " +
+        "LinkedList, Vector, Priority Queue, etc.",
+        stack: ["C++", "Visual Studio"],
+        githubLink: "https://github.com/darienmiller88/Twitter-clone" 
+    },
+    {
+        projectName: "Sorting Algorithms Visualized",
+        description: "Program to depict multiple sorting algorithms in real time.This project will use a " +
+        "visual representation using the c++ graphics library SFML to show conceptually, what each sorting " + 
+        "algorthim looks like at every pass.",
+        stack: ["C++", "SFML", "Visual Studio"],
+        githubLink: "https://github.com/darienmiller88/Sorting-Algortihms-Visualized" 
+    },
+    {
+        projectName: "Java Snake",
+        description: "Java swing implementation of the snake game.",
+        stack: ["Java", "Swing"],
+        githubLink: "https://github.com/darienmiller88/Twitter-clone" 
+    },
+    {
+        projectName: "Flappy Bird",
+        description: "Relatively faithful recreation of the (in)famous mobile phone game Flappy Bird.",
+        stack: ["Java", "Swing"],
+        githubLink: "https://github.com/darienmiller88/Flappy-Bird" 
+    },
+    {
+        projectName: "Snake",
+        description: "Console based implementation of the popular snake game in raw C++.",
+        stack: ["C++"],
+        githubLink: "https://github.com/darienmiller88/Snake" 
+    },
 ]

@@ -1,0 +1,164 @@
+.carousel_wrapper{
+    width: 100%;    
+    height: 200px;
+
+    margin: auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-arrow{
+    display: grid;
+    /* border: 2px solid red; */
+
+    z-index: 2;
+    width: 15%;
+    height: 100%;
+}
+
+.right-arrow{
+    display: grid;
+    /* border: 2px solid red; */
+
+    z-index: 2;
+    width: 15%;
+    height: 100%;
+}
+
+.arrow{
+    margin: auto;
+    font-size: 40px;
+    transition: 0.3s;
+    color: white;
+}
+
+.arrow:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.arrow:active{
+    color: var(--primary-transparent);
+}
+
+.current_picture{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.current_picture > img{
+    height: 100%;
+    width: 100%;
+  
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: 0.3s ease-in;
+}
+
+.indicator_wrapper{
+    display: flex;
+
+    width: 100%;
+    height: 15%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.indicator_wrapper > .indicator_inner{
+    display: flex;
+    width: fit-content;
+    height: 50%;
+    margin: auto;
+}
+
+.indicator_wrapper > .indicator_inner > .indicator{
+    margin: auto;
+    margin-right: 10px;
+
+    /* background-color: var(--cool-grey); */
+    border-radius: 10px;
+    border: 2px solid black;
+
+    height: 20%;
+    width: 40px;
+
+    transition: 0.3s;
+}
+
+.indicator_wrapper > .indicator_inner > .indicator:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+}
+
+.indicator_wrapper > .indicator_inner > .indicator:active{
+    background-color: var(--primary-transparent);
+}
+
+.indicator_wrapper > .indicator_inner > .active_indicator{
+    background-color: var(--primary);
+}
+
+
+@media screen and (min-width: 768px) {
+    .carousel_wrapper{
+        height: 350px;
+    }
+
+    .indicator_wrapper > .indicator_inner > .indicator{
+        width: 60px;
+    }
+
+    .arrow{
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carousel_wrapper{
+        height: 100%;
+    }
+
+    .current_picture_left_rounded > img{
+        /* Undo the default border radius styling */
+        border-top-right-radius: 0px;
+
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .current_picture_right_rounded > img{
+        /* Same thing, but for the other side. */
+        border-top-left-radius: 0px;
+
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .indicator_wrapper > .indicator_inner > .indicator{
+        width: 50px;
+        height: 20%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .indicator_wrapper > .indicator_inner > .indicator{
+        width: 100px;
+        height: 25%;
+        margin-right: 20px;
+    }
+
+    .arrow{
+        font-size: 80px;
+    }
+}

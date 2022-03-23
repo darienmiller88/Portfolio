@@ -8,7 +8,7 @@ import { technologies } from "../../Constants/Constants"
 export default function Technologies() {
     return (
         <div id="technologies-section">
-            <div className="technologies-header" style={{color: "white"}}>
+            <div className="header">
                 Technologies I've used
             </div>
             <Horizontal />

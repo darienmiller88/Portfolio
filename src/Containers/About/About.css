@@ -2,12 +2,12 @@
     margin-left: 15%;
 } */
 
-#about-section > .about-header{
+/* #about-section > .about-header{
     font-size: 30px;
     font-weight: bold;
     margin: auto;
     width: fit-content;
-}
+} */
 
 #about-section > .about-me{
     display: grid;
@@ -101,6 +101,10 @@ a:active {
         width: 70vw;
     }
 
+    /* #about-section > .about-header{
+        font-size: 60px;
+    } */
+
     #about-section > .about-me > .my-pic-div > img{
         height: 600px;
     }
@@ -117,9 +121,5 @@ a:active {
 
     #about-section > .about-me > .my-pic-div > img{
         height: 100%;
-    }
-
-    #about-section > .about-header{
-        font-size: 60px;
     }
 }

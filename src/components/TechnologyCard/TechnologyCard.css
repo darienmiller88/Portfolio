@@ -63,7 +63,15 @@
 
 }
 
-@media only screen and (min-width: 1300px){
+/* 14 inch laptops */
+@media only screen and (min-width: 1200px){
+    .technology-card > .technology-header{
+        font-size: 30px;
+    }
+}
+
+/* Large displays */
+@media only screen and (min-width: 1600px){
     .technology-card{
         height: 700px;
     }

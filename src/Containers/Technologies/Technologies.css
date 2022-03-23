@@ -1,9 +1,9 @@
-#technologies-section > .technologies-header{
+/* #technologies-section > .technologies-header{
     font-size: 30px;
     font-weight: bold;  
     margin: auto;
     width: fit-content;
-}
+} */
 
 #technologies-section > .technologies{
     display: grid;
@@ -31,24 +31,28 @@
 }
 
 @media only screen and (min-width: 992px){
+    /* #technologies-section > .technologies-header{
+        font-size: 60px;
+    } */
+
     #technologies-section > .technologies{
         width: 80vw;
         gap: 30px;
     }
+
+    #technologies-section > p{
+        width: fit-content;
+        font-size: 20px;
+    }
 }
 
-@media only screen and (min-width: 1400px){
+@media only screen and (min-width: 1300px){
     #technologies-section > .technologies{
         gap: 50px;
         width: 85vw;
     }
 
-    #technologies-section > .technologies-header{
-        font-size: 60px;
-    }
-
     #technologies-section > p{
-        width: fit-content;
         font-size: 30px;
     }
 }

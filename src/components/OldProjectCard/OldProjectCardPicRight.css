@@ -11,21 +11,21 @@
 }
 
 @media only screen and (min-width: 768px){
-    .card-wrapper-right{    
+    /* .card-wrapper-right{    
         grid-template-areas: " description picture";
         grid-template-columns: auto 60%;
-    }
+    } */
 
     .card-wrapper-right > .card-picture > img{
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 0px;
     }
 }
 
 
 @media only screen and (min-width: 992px){
     .card-wrapper-right{    
-        /* grid-template-areas:  "description picture"; */
+        grid-template-areas: "description picture";
         grid-template-columns: auto 60%;
     }
     

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Hero.css"
-import SectionDivider from '../SectionDivider/SectionDivider'
+import SectionDivider from '../../components/SectionDivider/SectionDivider'
 import Typical from 'react-typical'
 
 
