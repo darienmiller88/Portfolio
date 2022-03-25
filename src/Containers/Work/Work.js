@@ -6,7 +6,7 @@ import Horizontal from '../../components/Horizontal/Horizontal'
 
 export default function Work() {
     return (
-        <div id="work-section">
+        <div id="work_section">
             <div className="header">
                 Work Timeline  
             </div>                

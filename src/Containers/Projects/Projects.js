@@ -8,7 +8,7 @@ import { projects, olderProjects } from "../../Constants/Constants"
 
 export default function Projects() {
     return (
-        <div id="project-section">
+        <div id="project_section">
             <div className="header">
                  Personal Projects! 
             </div>

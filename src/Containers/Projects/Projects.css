@@ -1,4 +1,4 @@
-#project-section > .older_projects_header{
+#project_section > .older_projects_header{
     margin: auto;
     width: fit-content;
     color: white;
@@ -7,7 +7,7 @@
     /* border: 2px solid yellow; */
 }
 
-#project-section > .older_projects{
+#project_section > .older_projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -24,17 +24,17 @@
 }
 
 @media screen and (min-width: 768px) {
-    #project-section > .older_projects_header{
+    #project_section > .older_projects_header{
         font-size: 40px;
     }
 }
 
 @media screen and (min-width: 1500px) {
-    #project-section > .older_projects_header{
+    #project_section > .older_projects_header{
         font-size: 60px;
     }
 
-    #project-section > .older_projects{
+    #project_section > .older_projects{
         width: 90vw;
         gap: 25px 15px;
     }
