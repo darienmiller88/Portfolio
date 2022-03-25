@@ -4,7 +4,7 @@ import loading from "../../img/loading2_nobg.gif"
 import "./Contact.css"
 
 export default function Contact() {
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
     const [error, setError] = useState("")
     const [formData, setFormData] = useState({name: "", email: "", message: ""})
 
@@ -24,7 +24,7 @@ export default function Contact() {
             setError(err)
             console.error('Oh well, you failed. Here some thoughts on the error that occured:', err)
         })
-
+        
         setFormData({name: "", email: "", message: ""})
     }
 
