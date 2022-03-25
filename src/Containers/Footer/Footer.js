@@ -15,6 +15,10 @@ export default function Footer({isFixed}) {
                 <a href="mailto:darienmiller88@yahoo.com" className="social_icon_link">
                     <BsEnvelope className="social_link"/>
                 </a>
+                {
+                    isFixed
+                     ? <div></div> : null
+                }
             </div>
             <br/>
             <div className='copyright'>

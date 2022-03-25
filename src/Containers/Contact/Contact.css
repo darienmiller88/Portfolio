@@ -66,6 +66,25 @@
     transition: 0.3s;
 }
 
+.loading{
+    margin: auto;    
+    margin-top: 100px;
+
+    width: fit-content;
+}
+
+.loading > img{
+   height: 100px;
+   width: 100px;
+}
+
+.error{
+    margin: auto;
+    width: fit-content;
+    font-size: 30px;
+    color: red;
+}
+
 @media screen and (min-width: 768px) {
     #contact_section{
         width: 85vw;
@@ -110,6 +129,11 @@
 
     #contact_section > .send_message_button_wrapper > .send_message_button:hover{
         background-color: var(--primary-transparent);
+    }
+
+    .loading > img{
+        height: 200px;
+        width: 200px;
     }
 }
 

@@ -32,7 +32,7 @@
     margin: auto;
     font-size: 40px;
     transition: 0.3s;
-    color: white;
+    color: var(--cool-grey);
 }
 
 .arrow:hover{

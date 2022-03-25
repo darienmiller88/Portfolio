@@ -5,8 +5,6 @@ import { FaExternalLinkAlt } from "react-icons/fa"
 import Carousel from '../Carousel/Carousel';
 
 export default function ProjectCard({ project, projectNumber }) {        
-    console.table("project number:", projectNumber)
-
     return (
         <div className={`project_card ${ projectNumber % 2 === 0 ? "project_card_picture_left" : "project_card_picture_right"}`}>
             <Carousel projectImages={project.pictures} projectNumber={projectNumber}/>

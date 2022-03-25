@@ -67,7 +67,8 @@ export const technologies = [
         icon: <FaDatabase className='icon'/>,
         header: "Back-End",
         description: "Due to being primarily Back-end based, I can utilize multiple technologies such as " +
-        "MongoDB, PostgreSQL, Node.js, MySQL, Heroku, Netlify, and Docker.",
+        "MongoDB, PostgreSQL, Node.js, MySQL, Heroku, Netlify, and Docker, as well as low level languages " +
+        "like C++.",
         link: "#project-section"
     },
     {
