@@ -4,7 +4,7 @@ import loading from "../../img/loading2_nobg.gif"
 import "./Contact.css"
 
 export default function Contact() {
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState("")
     const [formData, setFormData] = useState({name: "", email: "", message: ""})
 
