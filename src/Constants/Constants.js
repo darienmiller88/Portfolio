@@ -1,20 +1,40 @@
-import twidder1 from "../img/twidder1.PNG"
+import twidder1 from "../img/twidder/twidder1.PNG"
 
-import gameon1 from "../img/gameon1.PNG"
-import gameon2 from "../img/gameon2.PNG"
-import gameon3 from "../img/gameon3.PNG"
-import gameon4 from "../img/gameon4.png"
-import gameon5 from "../img/gameon5.PNG"
+import gameon1 from "../img/gameon/gameon1.PNG"
+import gameon2 from "../img/gameon/gameon2.PNG"
+import gameon3 from "../img/gameon/gameon3.PNG"
+import gameon4 from "../img/gameon/gameon4.png"
+import gameon5 from "../img/gameon/gameon5.PNG"
 
-import taskscheduler1 from "../img/taskscheduler.png"
-import taskscheduler2 from "../img/taskscheduler2.png"
-import taskscheduler3 from "../img/taskscheduler3.png"
+import taskscheduler1 from "../img/taskscheduler/taskscheduler.png"
+import taskscheduler2 from "../img/taskscheduler/taskscheduler2.png"
+import taskscheduler3 from "../img/taskscheduler/taskscheduler3.png"
 
-import messenger1 from "../img/messenger1.png"
-import messenger2 from "../img/messenger2.png"
-import messenger3 from "../img/messenger3.png"
-import messenger4 from "../img/messenger4.png"
-import messenger5 from "../img/messenger5.png"
+import messenger1 from "../img/messenger/messenger1.png"
+import messenger2 from "../img/messenger/messenger2.png"
+import messenger3 from "../img/messenger/messenger3.png"
+import messenger4 from "../img/messenger/messenger4.png"
+import messenger5 from "../img/messenger/messenger5.png"
+
+import cplusplus from "../img/techlogos/c++.png"
+import css from "../img/techlogos/css.png"
+import docker from "../img/techlogos/docker.png"
+import git from "../img/techlogos/git.png"
+import go from "../img/techlogos/go.png"
+import heroku from "../img/techlogos/heroku.png"
+import html from "../img/techlogos/html.png"
+import javascript from "../img/techlogos/javascript.png"
+import mongodb from "../img/techlogos/mongodb.png"
+import mysql from "../img/techlogos/mysql.png"
+import netlify from "../img/techlogos/netlify.png"
+import nodejs from "../img/techlogos/node.png"
+import postgres from "../img/techlogos/postgres.png"
+import react from "../img/techlogos/react.png"
+import redux from "../img/techlogos/redux.png"
+import sass from "../img/techlogos/sass.png"
+import sql from "../img/techlogos/sql.png"
+import vue from "../img/techlogos/vue.png"
+
 
 import { FaReact, FaDatabase, FaFigma } from 'react-icons/fa'
 
@@ -56,28 +76,77 @@ export const projects = [
 
 export const technologies = [
     {
-        icon: <FaReact className='icon'/>,
-        header: "Front-End",
-        description: "I have extensive experience in using Javascript frameworks to beautify and " + 
-        "modularize my projects. I have a strong preference for React.js, but I have also successfully " +
-        "used Vue.js and Next.js.",
-        link: "#project-section"
-    }, 
-    {
-        icon: <FaDatabase className='icon'/>,
-        header: "Back-End",
-        description: "Due to being primarily Back-end based, I can utilize multiple technologies such as " +
-        "MongoDB, PostgreSQL, Node.js, MySQL, Heroku, Netlify, and Docker, as well as low level languages " +
-        "like C++.",
-        link: "#project-section"
+        technologyName: "C++",
+        image: cplusplus   
     },
     {
-        icon: <FaFigma className='icon'/>,
-        header: "UI/UX",
-        description: "I have achieved success in the UI/UX field using schematic tools such as Figma to " + 
-        "to design the front ends of several of my projects, including this website.",
-        link: "https://www.figma.com/"
-    }
+        technologyName: "CSS3",
+        image: css    
+    },
+    {
+        technologyName: "Docker",
+        image: docker    
+    },
+    {
+        technologyName: "Git",
+        image: git    
+    },
+    {
+        technologyName: "Go",
+        image: go    
+    },
+    {
+        technologyName: "Heroku",
+        image: heroku    
+    },
+    {
+        technologyName: "HTML5",
+        image: html    
+    },
+    {
+        technologyName: "Javascript",
+        image: javascript    
+    },
+    {
+        technologyName: "MongoDB",
+        image: mongodb    
+    },
+    {
+        technologyName: "MySQL",
+        image: mysql    
+    }, 
+    {
+        technologyName: "Netlify",
+        image: netlify    
+    },
+    {
+        technologyName: "Node.js",
+        image: nodejs    
+    }, 
+    {
+        technologyName: "PostgreSQL",
+        image: postgres    
+    }, 
+    {
+        technologyName: "React",
+        image: react
+    },
+    {
+        technologyName: "Redux",
+        image: redux
+    },
+    {
+        technologyName: "Sass",
+        image: sass
+    },
+    {
+        technologyName: "SQL",
+        image: sql
+    },
+    {
+        technologyName: "Vue",
+        image: vue
+    },
 ]
 
 export const work = [
@@ -136,13 +205,14 @@ export const work = [
         business: "CUNY Tech Prep",    
         position: "Software Engineer Fellow",     
         description: [
-            "Selected for a technical training program, as one of 183 students out of 400+ applicants",
             "Learn in-demand technologies like React, Node + Express, and PostgreSQL as well as industry " + 
             "best practices for design, implementation, and deployment such as MVC, version control with " +
-            "Git/GitHub, agile & Scrum with Trello and Slack, test driven development, and CI/CD"
+            "Git/GitHub, agile & Scrum with Trello and Slack, test driven development, and CI/CD",
+            "Assisted future cohorts in establishing their SQL relations and in deploying their databases to Heroku.",
+            "Selected for a technical training program, as one of 183 students out of 400+ applicants",
         ],
         yearStart: "August 2020",
-        yearEnd: "Present"
+        yearEnd: "May 2021"
     }
 ]
 

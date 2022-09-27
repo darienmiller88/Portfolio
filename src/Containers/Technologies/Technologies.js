@@ -6,6 +6,17 @@ import Horizontal from "../../components/Horizontal/Horizontal"
 import { technologies } from "../../Constants/Constants"
 
 export default function Technologies() {
+    const Technology = ({ technologyImage,technologyName }) => {
+        return (
+            <div className='technology-wrapper'>
+                <div className='technology'>
+                    <img src={technologyImage} alt="tech"/>
+                </div>
+                <div className='technology-name'>{technologyName}</div>
+            </div>
+        )
+    }
+
     return (
         <div id="technologies-section">
             <div className="header">
@@ -21,6 +32,13 @@ export default function Technologies() {
             <div className="technologies">
                 {
                     technologies.map((technology, i) => {
+                        return <Technology technologyImage={technology.image} technologyName={technology.technologyName}/>
+
+                    })
+                }
+
+                {/* {
+                    technologies.map((technology, i) => {
                         return <TechnologyCard
                             key={i}
                             icon={technology.icon}
@@ -29,7 +47,7 @@ export default function Technologies() {
                             link={technology.link}
                         />
                     })
-                }
+                } */}
             </div> 
             <SectionDivider addMargin={true}/>
         </div>
