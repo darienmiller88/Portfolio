@@ -1,14 +1,13 @@
 import React from 'react'
 import "./Technologies.css"
 import SectionDivider from "../../components/SectionDivider/SectionDivider"
-import TechnologyCard from "../../components/TechnologyCard/TechnologyCard"
 import Horizontal from "../../components/Horizontal/Horizontal"
 import { technologies } from "../../Constants/Constants"
 
 export default function Technologies() {
-    const Technology = ({ technologyImage,technologyName }) => {
+    const Technology = ({ technologyImage,technologyName,  }) => {
         return (
-            <div className='technology-wrapper'>
+            <div className='technology-wrapper' >
                 <div className='technology'>
                     <img src={technologyImage} alt="tech"/>
                 </div>
@@ -28,26 +27,12 @@ export default function Technologies() {
                 Front-End and Back-End tools.
             </p>
             <br/>
-
             <div className="technologies">
                 {
                     technologies.map((technology, i) => {
-                        return <Technology technologyImage={technology.image} technologyName={technology.technologyName}/>
-
+                        return <Technology technologyImage={technology.image} technologyName={technology.technologyName } key={i}/>
                     })
                 }
-
-                {/* {
-                    technologies.map((technology, i) => {
-                        return <TechnologyCard
-                            key={i}
-                            icon={technology.icon}
-                            header={technology.header}
-                            description={technology.description}
-                            link={technology.link}
-                        />
-                    })
-                } */}
             </div> 
             <SectionDivider addMargin={true}/>
         </div>

@@ -12,7 +12,6 @@ export default function WorkGroup() {
         const jobs = jobsRef.current.querySelectorAll(".work-title")        
 
         jobs.forEach((job, i) => {
-            console.log("i:", i);
             //Add the active class to the job the user clicked on.
             if(job.textContent === e.target.textContent){
                 job.classList.add(activeClass)

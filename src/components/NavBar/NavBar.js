@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import "./NavBar.css"
 import pdf from "../../Documents/Formal_Resume.pdf"
-import logo from "../../img/logo.png"
+import logo from "../../img/circle-logo.png"
 import SocialIcons from '../SocialIcons/SocialIcons'
 import isCollapsed from '../IsCollapsed/IsCollapsed'
 

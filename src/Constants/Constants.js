@@ -22,7 +22,7 @@ import docker from "../img/techlogos/docker.png"
 import git from "../img/techlogos/git.png"
 import go from "../img/techlogos/go.png"
 import heroku from "../img/techlogos/heroku.png"
-import html from "../img/techlogos/html.png"
+import html from "../img/techlogos/html2.png"
 import javascript from "../img/techlogos/javascript.png"
 import mongodb from "../img/techlogos/mongodb.png"
 import mysql from "../img/techlogos/mysql.png"
@@ -34,9 +34,6 @@ import redux from "../img/techlogos/redux.png"
 import sass from "../img/techlogos/sass.png"
 import sql from "../img/techlogos/sql.png"
 import vue from "../img/techlogos/vue.png"
-
-
-import { FaReact, FaDatabase, FaFigma } from 'react-icons/fa'
 
 export const projects = [
     {
@@ -80,9 +77,25 @@ export const technologies = [
         image: cplusplus   
     },
     {
+        technologyName: "Go",
+        image: go    
+    },
+    {
+        technologyName: "HTML5",
+        image: html    
+    },
+    {
         technologyName: "CSS3",
         image: css    
     },
+    {
+        technologyName: "Javascript",
+        image: javascript    
+    },
+    {
+        technologyName: "Node.js",
+        image: nodejs    
+    }, 
     {
         technologyName: "Docker",
         image: docker    
@@ -92,20 +105,8 @@ export const technologies = [
         image: git    
     },
     {
-        technologyName: "Go",
-        image: go    
-    },
-    {
         technologyName: "Heroku",
         image: heroku    
-    },
-    {
-        technologyName: "HTML5",
-        image: html    
-    },
-    {
-        technologyName: "Javascript",
-        image: javascript    
     },
     {
         technologyName: "MongoDB",
@@ -116,17 +117,13 @@ export const technologies = [
         image: mysql    
     }, 
     {
-        technologyName: "Netlify",
-        image: netlify    
-    },
-    {
-        technologyName: "Node.js",
-        image: nodejs    
-    }, 
-    {
         technologyName: "PostgreSQL",
         image: postgres    
     }, 
+    {
+        technologyName: "Netlify",
+        image: netlify    
+    },
     {
         technologyName: "React",
         image: react
@@ -151,28 +148,30 @@ export const technologies = [
 
 export const work = [
     {
-        business: "Administration for Child Services",
-        position: "Summer Intern",
+        business: "CUNY Tech Prep",    
+        position: "Software Engineer Fellow",     
         description: [
-            "Worked as Office Aide and trainee for the buildings’ Information Technology services.",
-            "Performed installations of printers, personal computers for many employees, and created " + 
-            "office-wide Local Area Networks."
+            "Learn in-demand technologies like React, Node + Express, and PostgreSQL as well as industry " + 
+            "best practices for design, implementation, and deployment such as MVC, version control with " +
+            "Git/GitHub, agile & Scrum with Trello and Slack, test driven development, and CI/CD",
+            "Assisted future cohorts in establishing their SQL relations and in deploying their databases to Heroku.",
+            "Selected for a technical training program, as one of 183 students out of 400+ applicants",
         ],
-        yearStart: "July 2015",
-        yearEnd: "August 2015"
+        yearStart: "August 2020",
+        yearEnd: "May 2021"
     },
     {
-        business: "Digital Girl, Inc.",
+        business: "Private Tutoring",
         position: "Computer Science Tutor",
         description: [
-            "Worked with a grassroots company to support its goal to encourage young students to pursue " +
-            "computer science.",
-            "Observed behavior for approximately twenty students and delivered insight to organization" +
-            "director of each student’s strengths and weaknesses.",
-            "Tailored teaching style to ensure that each student enjoyed the computer science curriculum."
+            "Appointed by several peers to tutor three Junior computer science majors concurrently. " +
+            "Using primarily Java and C++, topics included Orientated programming and Data structures " + 
+            "were taught using comprehensive lesson plans.",
+            "By incorporating various methods of teaching, each student was able to pass both their midterm " + 
+            "and final exam andvcomplete difficult assignments in a timely fashion."
         ],
-        yearStart: "November 2015",
-        yearEnd: "May 2016"
+        yearStart: "April 2018",
+        yearEnd: "November 2021"
     },
     {
         business: "CUNY Tutor Corps",
@@ -189,31 +188,29 @@ export const work = [
         yearEnd: "June 2020"
     },
     {
-        business: "Private Tutoring",
+        business: "Digital Girl, Inc.",
         position: "Computer Science Tutor",
         description: [
-            "Appointed by several peers to tutor three Junior computer science majors concurrently. " +
-            "Using primarily Java and C++, topics included Orientated programming and Data structures " + 
-            "were taught using comprehensive lesson plans.",
-            "By incorporating various methods of teaching, each student was able to pass both their midterm " + 
-            "and final exam andvcomplete difficult assignments in a timely fashion."
+            "Worked with a grassroots company to support its goal to encourage young students to pursue " +
+            "computer science.",
+            "Observed behavior for approximately twenty students and delivered insight to organization" +
+            "director of each student’s strengths and weaknesses.",
+            "Tailored teaching style to ensure that each student enjoyed the computer science curriculum."
         ],
-        yearStart: "April 2018",
-        yearEnd: "November 2021"
+        yearStart: "November 2015",
+        yearEnd: "May 2016"
     },
     {
-        business: "CUNY Tech Prep",    
-        position: "Software Engineer Fellow",     
+        business: "Administration for Child Services",
+        position: "Summer Intern",
         description: [
-            "Learn in-demand technologies like React, Node + Express, and PostgreSQL as well as industry " + 
-            "best practices for design, implementation, and deployment such as MVC, version control with " +
-            "Git/GitHub, agile & Scrum with Trello and Slack, test driven development, and CI/CD",
-            "Assisted future cohorts in establishing their SQL relations and in deploying their databases to Heroku.",
-            "Selected for a technical training program, as one of 183 students out of 400+ applicants",
+            "Worked as Office Aide and trainee for the buildings’ Information Technology services.",
+            "Performed installations of printers, personal computers for many employees, and created " + 
+            "office-wide Local Area Networks."
         ],
-        yearStart: "August 2020",
-        yearEnd: "May 2021"
-    }
+        yearStart: "July 2015",
+        yearEnd: "August 2015"
+    },
 ]
 
 export const olderProjects = [
@@ -232,8 +229,8 @@ export const olderProjects = [
     },
     {
         projectName: "Dance Movement",
-        description: "Guided a team through the process of building a full stack web application intended to " +
-        "retrieve small videos from a databse depicting dance moves, and posting it on a dashboard.",
+        description: "Supervised a team through the process of building a full stack web application intended to " +
+        "retrieve videos from a database depicting dance moves, and posting it on a dashboard.",
         stack: ["Node.js", "Express", "HTML", "CSS", "MySQL"],
         githubLink: "https://github.com/darienmiller88/danceMovement" 
     },
