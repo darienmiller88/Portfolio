@@ -1,20 +1,23 @@
 import twidder1 from "../img/twidder/twidder1.PNG"
 
-import gameon1 from "../img/gameon/gameon1.PNG"
-import gameon2 from "../img/gameon/gameon2.PNG"
-import gameon3 from "../img/gameon/gameon3.PNG"
-import gameon4 from "../img/gameon/gameon4.png"
-import gameon5 from "../img/gameon/gameon5.PNG"
+import pong          from "../img/Chip-8/pong.png"
+import fishie        from "../img/Chip-8/fishie.png"
+import testopcode    from "../img/Chip-8/testopcode.png"
+import spaceinvaders from "../img/Chip-8/space invaders.png"
 
-import taskscheduler1 from "../img/taskscheduler/taskscheduler.png"
-import taskscheduler2 from "../img/taskscheduler/taskscheduler2.png"
-import taskscheduler3 from "../img/taskscheduler/taskscheduler3.png"
+import messenger1 from "../img/fbmessenger/fbmessenger1.png"
+import messenger2 from "../img/fbmessenger/fbmessenger2.png"
+import messenger3 from "../img/fbmessenger/fbmessenger3.png"
 
-import messenger1 from "../img/messenger/messenger1.png"
-import messenger2 from "../img/messenger/messenger2.png"
-import messenger3 from "../img/messenger/messenger3.png"
-import messenger4 from "../img/messenger/messenger4.png"
-import messenger5 from "../img/messenger/messenger5.png"
+import chooseEquality1 from "../img/ChoosEquality/one.png"
+import chooseEquality2 from "../img/ChoosEquality/two.png"
+import chooseEquality3 from "../img/ChoosEquality/three.png"
+
+import MDBank1 from "../img/MDBank/title.png"
+import MDBank2 from "../img/MDBank/create-account.png"
+import MDBank3 from "../img/MDBank/dashboard.png"
+import MDBank4 from "../img/MDBank/transfer-money.png"
+import MDBank5 from "../img/MDBank/transfers.png"
 
 import cplusplus from "../img/techlogos/c++.png"
 import css from "../img/techlogos/css.png"
@@ -33,32 +36,46 @@ import react from "../img/techlogos/react.png"
 import redux from "../img/techlogos/redux.png"
 import sass from "../img/techlogos/sass.png"
 import sql from "../img/techlogos/sql.png"
-import vue from "../img/techlogos/vue.png"
 
 export const projects = [
     {
-        pictures: [gameon1, gameon2, gameon3, gameon4, gameon5],
-        projectTitle: "GameOn",
-        description: "React web application in a team of 3, allowing users of similar gaming tastes to connect with each other.",
-        stack: ["React", "Node", "Express", "PostgreSQL"],
-        githubLink: "https://github.com/Land-Sharks/GameOn",
+        pictures: [pong, fishie, spaceinvaders, testopcode],
+        projectTitle: "Chip-8 Emulator",
+        description: "C++ implementation of a Chip-8 interpreter using SFML to provide graphics and audio " +
+        "capabilities. This emulator is capable of running a good number of Chip-8 games effectively, with controls " +
+        "and framerate functioning as expected, and graphical capabilities near perfection.", 
+        stack: ["C++", "SFML"],
+        githubLink: "https://github.com/darienmiller88/Chip8-Emulator",
         projectLink: ""
     },
     {
-        pictures: [messenger1, messenger2, messenger3, messenger4, messenger5],
+        pictures: [messenger1, messenger2, messenger3],
         projectTitle: "Messenger",
-        description: "Messenger application built using HTML, CSS, Javascript, and Go.",
-        stack: ["HTML", "CSS", "Javascript", "Go", "Gorm"],
-        githubLink: "https://github.com/darienmiller88/Golang-Messenger",
-        projectLink: ""
+        description: "Messenger application built using HTML, CSS, Javascript, and Go. Messenger allows " +
+        "users to chat together in a public chat, as well as create group chats where they can message other " + 
+        "users added to those chats.",
+        stack: ["React", "Go", "Gorm", "PostgreSQL", "Netlify"],
+        githubLink: "https://github.com/darienmiller88/Messenger",
+        projectLink: "https://facebookmessenger.netlify.app/"
     },
     {
-        pictures: [taskscheduler1, taskscheduler2, taskscheduler3],
-        projectTitle: "Task Scheduler",
-        description: "Task scheduler built for a client that allows users to set different types of reminders.",
-        stack: ["React.js", "Go", "MongoDB", "Netlify"],
-        githubLink: "https://github.com/darienmiller88/Task-Scheduler",
-        projectLink: "https://thetaskscheduler.netlify.app/"
+        pictures: [MDBank1, MDBank2, MDBank3, MDBank4, MDBank5],
+        projectTitle: "MDBank",
+        description: "Built a React and Go banking application inspired by Citibank that was successfully " +
+        "containerized using Docker, and deployed onto Heroku and Netlify.",
+        stack: ["React", "Go", "MongoDB", "Netlify"],
+        githubLink: "https://github.com/darienmiller88/Better-Bank-Account",
+        projectLink: "https://millerbank.netlify.app/"
+    },
+    {
+        pictures: [chooseEquality1, chooseEquality2, chooseEquality3],
+        projectTitle: "ChoosEquality",
+        description: "Coordinated a team of 4 as Scrum Master to rapidly develop in 2 days a web application " +
+        "using SolidJS, Go, and PostgreSQL to aid in the integration of formerly incarcerated persons back " +
+        "into society",
+        stack: ["SolidJS", "Go", "Gorm", "PostgreSQL", "Netlify"],
+        githubLink: "https://github.com/darienmiller88/Girls-in-Tech-Hackathon",
+        projectLink: "https://girlsintech.netlify.app/"
     },
     {
         pictures: [twidder1],
@@ -67,7 +84,6 @@ export const projects = [
         stack: ["React", "Go", "Gorm", "PostgreSQL", "Netlify"],
         githubLink: "https://github.com/darienmiller88/Better-Twitter-Clone",
         projectLink: ""
-
     }
 ]
 
@@ -81,16 +97,20 @@ export const technologies = [
         image: go    
     },
     {
+        technologyName: "React",
+        image: react
+    },
+    {
+        technologyName: "Javascript",
+        image: javascript    
+    },
+    {
         technologyName: "HTML5",
         image: html    
     },
     {
         technologyName: "CSS3",
         image: css    
-    },
-    {
-        technologyName: "Javascript",
-        image: javascript    
     },
     {
         technologyName: "Node.js",
@@ -105,28 +125,28 @@ export const technologies = [
         image: git    
     },
     {
-        technologyName: "Heroku",
-        image: heroku    
-    },
+        technologyName: "PostgreSQL",
+        image: postgres    
+    }, 
     {
         technologyName: "MongoDB",
         image: mongodb    
+    },
+    {
+        technologyName: "Heroku",
+        image: heroku    
     },
     {
         technologyName: "MySQL",
         image: mysql    
     }, 
     {
-        technologyName: "PostgreSQL",
-        image: postgres    
-    }, 
+        technologyName: "SQL",
+        image: sql
+    },
     {
         technologyName: "Netlify",
         image: netlify    
-    },
-    {
-        technologyName: "React",
-        image: react
     },
     {
         technologyName: "Redux",
@@ -136,17 +156,22 @@ export const technologies = [
         technologyName: "Sass",
         image: sass
     },
-    {
-        technologyName: "SQL",
-        image: sql
-    },
-    {
-        technologyName: "Vue",
-        image: vue
-    },
 ]
 
 export const work = [
+    // {
+    //     business: "Platinum Edge Tutoring",    
+    //     position: "Computer Science Tutor",     
+    //     description: [
+    //         "Learn in-demand technologies like React, Node + Express, and PostgreSQL as well as industry " + 
+    //         "best practices for design, implementation, and deployment such as MVC, version control with " +
+    //         "Git/GitHub, agile & Scrum with Trello and Slack, test driven development, and CI/CD",
+    //         "Assisted future cohorts in establishing their SQL relations and in deploying their databases to Heroku.",
+    //         "Selected for a technical training program, as one of 183 students out of 400+ applicants",
+    //     ],
+    //     yearStart: "March 2023",
+    //     yearEnd: "Present"
+    // },
     {
         business: "CUNY Tech Prep",    
         position: "Software Engineer Fellow",     
@@ -168,7 +193,7 @@ export const work = [
             "Using primarily Java and C++, topics included Orientated programming and Data structures " + 
             "were taught using comprehensive lesson plans.",
             "By incorporating various methods of teaching, each student was able to pass both their midterm " + 
-            "and final exam andvcomplete difficult assignments in a timely fashion."
+            "and final exam and complete difficult assignments in a timely fashion."
         ],
         yearStart: "April 2018",
         yearEnd: "November 2021"
@@ -228,7 +253,7 @@ export const olderProjects = [
         githubLink: "https://github.com/darienmiller88/NASA-API-Application" 
     },
     {
-        projectName: "Dance Movement",
+        projectName: "Dance Movements",
         description: "Supervised a team through the process of building a full stack web application intended to " +
         "retrieve videos from a database depicting dance moves, and posting it on a dashboard.",
         stack: ["Node.js", "Express", "HTML", "CSS", "MySQL"],
@@ -253,14 +278,14 @@ export const olderProjects = [
         projectName: "Frogger",
         description: "An attempt to remake the classic game frogger. ",
         stack: ["C++", "SFML", "Visual Studio"],
-        githubLink: "https://github.com/darienmiller88/Twitter-clone" 
+        githubLink: "https://github.com/darienmiller88/Frogger" 
     },
     {
         projectName: "C++ Data Structures",
         description: "A collection of C++ implementations of the STL, which includes the Hashmap, Tree Map, " +
         "LinkedList, Vector, Priority Queue, etc.",
         stack: ["C++", "Visual Studio"],
-        githubLink: "https://github.com/darienmiller88/Twitter-clone" 
+        githubLink: "https://github.com/darienmiller88/Data-Structures-In-C-plus-plus" 
     },
     {
         projectName: "Sorting Algorithms Visualized",
@@ -274,7 +299,7 @@ export const olderProjects = [
         projectName: "Java Snake",
         description: "Java swing implementation of the snake game.",
         stack: ["Java", "Swing"],
-        githubLink: "https://github.com/darienmiller88/Twitter-clone" 
+        githubLink: "https://github.com/darienmiller88/Java-Swing-Snake" 
     },
     {
         projectName: "Flappy Bird",

@@ -5,9 +5,9 @@ import Horizontal from "../../components/Horizontal/Horizontal"
 import { technologies } from "../../Constants/Constants"
 
 export default function Technologies() {
-    const Technology = ({ technologyImage,technologyName,  }) => {
+    const Technology = ({ technologyImage, technologyName}) => {
         return (
-            <div className='technology-wrapper' >
+            <div className='technology-wrapper'>
                 <div className='technology'>
                     <img src={technologyImage} alt="tech"/>
                 </div>

@@ -43,12 +43,14 @@
     font-weight: bold;
     padding: 0px 10px;
     height: 100%;
+    /* border: 2px yellow solid; */
+
 }
 
 .project_card > .project_description_div > .project_title_wrapper > .project_links_wrapper{
     /* border: 2px solid salmon; */
-    padding: 0px 8px;
-    width: 30%;
+    /* padding: 0px 8px; */
+    /* width: 30%; */
 
     display: flex;
     /* align-items: center; */
@@ -58,7 +60,7 @@
 .project_card > .project_description_div > .project_title_wrapper > .project_links_wrapper > a{
     /* border: 2px solid red; */
     height: 100%;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 .project_card > .project_description_div > .project_title_wrapper > .project_links_wrapper > a > .project_link{
@@ -92,11 +94,13 @@
 /* Styling for tablets */
 @media screen and (min-width: 768px) {
     .project_card > .project_description_div > .project_title_wrapper > .project_links_wrapper{
-        padding: 0px 25px;
+        padding: 0px 5px;
+        /* border: 2px red solid; */
     }
 
     .project_card > .project_description_div > .project_title_wrapper > .project_links_wrapper > a > .project_link{
         font-size: 50px;
+        /* margin-right: 10px; */
     }
 
     .project_card > .project_description_div > .project_title_wrapper > .project_title > .project_title_text{
@@ -118,19 +122,19 @@
 /* "Small" laptops, minimum 14 inches */
 @media screen and (min-width: 1200px) {
     .project_card{
-        width: 80vw;
+        width: 85vw;
 
         box-shadow: 15px 15px 10px rgb(20, 20, 20);
         height: 380px;
     }
 
     .project_card_picture_left{
-        grid-template-columns: 55% auto;
+        grid-template-columns: 60% auto;
         grid-template-areas: "picture description";
     }
 
     .project_card_picture_right{
-        grid-template-columns: auto 55%;
+        grid-template-columns: auto 60%;
         grid-template-areas: "description picture";
     }
 
@@ -151,7 +155,7 @@
 
     .project_card > .project_description_div > .project_title_wrapper > .project_links_wrapper{
         width: 25%;
-        padding: 0px 15px;
+        /* padding: 0px 15px; */
     }
 
     .project_card > .project_description_div > .project_title_wrapper > .project_links_wrapper > a > .project_link{
