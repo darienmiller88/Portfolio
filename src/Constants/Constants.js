@@ -228,18 +228,7 @@ export const work = [
         ],
         yearStart: "November 2015",
         yearEnd: "May 2016"
-    },
-    {
-        business: "Administration for Child Services",
-        position: "Summer Intern",
-        description: [
-            "Worked as Office Aide and trainee for the buildings’ Information Technology services.",
-            "Performed installations of printers, personal computers for many employees, and created " + 
-            "office-wide Local Area Networks."
-        ],
-        yearStart: "July 2015",
-        yearEnd: "August 2015"
-    },
+    }
 ]
 
 export const olderProjects = [
