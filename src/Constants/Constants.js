@@ -159,19 +159,23 @@ export const technologies = [
 ]
 
 export const work = [
-    // {
-    //     business: "Platinum Edge Tutoring",    
-    //     position: "Computer Science Tutor",     
-    //     description: [
-    //         "Learn in-demand technologies like React, Node + Express, and PostgreSQL as well as industry " + 
-    //         "best practices for design, implementation, and deployment such as MVC, version control with " +
-    //         "Git/GitHub, agile & Scrum with Trello and Slack, test driven development, and CI/CD",
-    //         "Assisted future cohorts in establishing their SQL relations and in deploying their databases to Heroku.",
-    //         "Selected for a technical training program, as one of 183 students out of 400+ applicants",
-    //     ],
-    //     yearStart: "March 2023",
-    //     yearEnd: "Present"
-    // },
+    {
+        business: "Platinum Edge Tutoring",    
+        position: "Computer Science Tutor",     
+        description: [
+            "Tutored and directed class discussion for middle and high school students at 5 different schools " +
+            "across NYC in Algebra, History and Computer Science, serving as the lead instructor.",
+            "Coordinated and managed after-school program for students K-5, handling their needs regarding " + 
+            "homework assistance, creative development, and emotional and physical care. ",
+            "Coached students in Math and English, aiding in subject mastery and with test-taking skills, " +
+            "resulting in massively improved learning comprehension, and mock-test score improvements by up " +
+            "to 12% for each grade.",
+            "Supervised students during physical activity, reducing injuries by up to 28%, and stimulated their " +
+            "imagination by introducing several activities such as Soccer, Rugby relays, and obstacle courses.- "
+        ],
+        yearStart: "March 2023",
+        yearEnd: "Present"
+    },
     {
         business: "CUNY Tech Prep",    
         position: "Software Engineer Fellow",     
