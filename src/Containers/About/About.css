@@ -98,7 +98,7 @@ a:active {
 @media only screen and (min-width: 992px){
     #about-section > .about-me{
         grid-template-columns: 45% auto;
-        width: 70vw;
+        width: 80vw;
     }
 
     /* #about-section > .about-header{

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./About.css"
-import myPic from "../../img/about-me.PNG"
+import myPic from "../../img/currentme.jpg"
 import SectionDivider from "../../components/SectionDivider/SectionDivider"
 import Horizontal from "../../components/Horizontal/Horizontal"
 

@@ -116,6 +116,7 @@
         font-weight: normal;
 
         margin: 0px 20px;
+
     }
 }
 
@@ -171,8 +172,11 @@
         font-size: 20px;
     }
 
+    .project_card > .project_description_div > .tech_stack_wrapper{
+        overflow-x: hidden;
+    }
+
     .project_card > .project_description_div > .tech_stack_wrapper > .tech_stack{
-        overflow-x: scroll;
         font-size: 20px;
         font-weight: normal;
     }

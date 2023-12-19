@@ -5,9 +5,10 @@ import fishie        from "../img/Chip-8/fishie.png"
 import testopcode    from "../img/Chip-8/testopcode.png"
 import spaceinvaders from "../img/Chip-8/space invaders.png"
 
-import messenger1 from "../img/fbmessenger/fbmessenger1.png"
-import messenger2 from "../img/fbmessenger/fbmessenger2.png"
-import messenger3 from "../img/fbmessenger/fbmessenger3.png"
+import messenger1 from "../img/messengerv2/home.png"
+import messenger2 from "../img/messengerv2/signinform.png"
+import messenger3 from "../img/messengerv2/deletemessageform.png"
+import messenger4 from "../img/messengerv2/addnewchatform.png"
 
 import chooseEquality1 from "../img/ChoosEquality/one.png"
 import chooseEquality2 from "../img/ChoosEquality/two.png"
@@ -21,6 +22,7 @@ import MDBank5 from "../img/MDBank/transfers.png"
 
 import cplusplus from "../img/techlogos/c++.png"
 import css from "../img/techlogos/css.png"
+import svelte from "../img/techlogos/svelte.png"
 import docker from "../img/techlogos/docker.png"
 import git from "../img/techlogos/git.png"
 import go from "../img/techlogos/go.png"
@@ -39,6 +41,16 @@ import sql from "../img/techlogos/sql.png"
 
 export const projects = [
     {
+        pictures: [messenger1, messenger2, messenger3, messenger4],
+        projectTitle: "Messenger",
+        description: "Messenger application built using Svelte, Go and PostgreSQL. Messenger allows " +
+        "users to chat together in a public chat, as well as create group chats where they can message other " + 
+        "users added to those chats. Users can even see message history!",
+        stack: ["Svelte", "Go", "PostgreSQL", "Netlify", "Pusher"],
+        githubLink: "https://github.com/darienmiller88/MessengerV2",
+        projectLink: "https://messengerv2.netlify.app/"
+    },
+    {
         pictures: [pong, fishie, spaceinvaders, testopcode],
         projectTitle: "Chip-8 Emulator",
         description: "C++ implementation of a Chip-8 interpreter using SFML to provide graphics and audio " +
@@ -47,16 +59,6 @@ export const projects = [
         stack: ["C++", "SFML"],
         githubLink: "https://github.com/darienmiller88/Chip8-Emulator",
         projectLink: ""
-    },
-    {
-        pictures: [messenger1, messenger2, messenger3],
-        projectTitle: "Messenger",
-        description: "Messenger application built using HTML, CSS, Javascript, and Go. Messenger allows " +
-        "users to chat together in a public chat, as well as create group chats where they can message other " + 
-        "users added to those chats.",
-        stack: ["React", "Go", "Gorm", "PostgreSQL", "Netlify"],
-        githubLink: "https://github.com/darienmiller88/Messenger",
-        projectLink: "https://facebookmessenger.netlify.app/"
     },
     {
         pictures: [MDBank1, MDBank2, MDBank3, MDBank4, MDBank5],
@@ -99,6 +101,10 @@ export const technologies = [
     {
         technologyName: "React",
         image: react
+    },
+    {
+        technologyName: "Svelte",
+        image: svelte
     },
     {
         technologyName: "Javascript",
