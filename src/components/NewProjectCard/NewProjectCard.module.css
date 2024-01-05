@@ -57,15 +57,15 @@
     display: flex;
 }
 
-.project_description_wrapper .button_group button{
+.project_description_wrapper .button_group a{
     display: flex;
     align-items: center;
 
-    margin-right: 30px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 8px;
     transition: 0.3s;
     font-weight: 900;
+    text-decoration: none;
 
     &:hover{
         color: aliceblue;
@@ -73,7 +73,7 @@
     }
 }
 
-.project_description_wrapper .button_group button .icon{
+.project_description_wrapper .button_group a .icon{
     margin-left: 10px;
 }
 

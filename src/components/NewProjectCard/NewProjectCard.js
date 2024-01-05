@@ -23,14 +23,14 @@ export default function NewProjectCard({project, projectNumber}) {
                     }
                 </div>
                 <div className={styles.button_group}>
-                    <button className={styles.view_code}>
+                    <a className={styles.view_code} href={project.githubLink}>
                         View Code! 
                         <BsGithub className={styles.icon}/>
-                    </button>
-                    <button className={styles.demo}>
+                    </a>
+                    <a className={styles.demo} href={project.projectLink} >
                         Demo
                         <BsBoxArrowUpRight className={styles.icon}/>
-                    </button>
+                    </a>
                 </div>
             </div>
             <div className={styles.project_image_wrapper}>
