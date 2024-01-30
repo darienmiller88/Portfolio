@@ -3,6 +3,7 @@
 </p>
 <h1 align="center">Personal website built with React</h1>
 
+<h2 align="center">Temporary website link is https://darienmiller.netlify.app/ until netlify renews https://darienmiller.com :(</h2>
 
 <p align="center">
   <img src="https://api.netlify.com/api/v1/badges/bc438b2e-9f12-4bbe-987e-d36fcef20a2f/deploy-status">
