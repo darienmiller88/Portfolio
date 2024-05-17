@@ -3,7 +3,6 @@
 </p>
 <h1 align="center">Personal website built with React</h1>
 
-
 <p align="center">
   <img src="https://api.netlify.com/api/v1/badges/bc438b2e-9f12-4bbe-987e-d36fcef20a2f/deploy-status">
 </p>
