@@ -21,6 +21,8 @@ import MDBank4 from "../img/MDBank/transfer-money.png"
 import MDBank5 from "../img/MDBank/transfers.png"
 
 import cplusplus from "../img/techlogos/c++.png"
+import csharp from "../img/techlogos/csharp.png"
+import python from "../img/techlogos/python.png"
 import css from "../img/techlogos/css.png"
 import svelte from "../img/techlogos/svelte.png"
 import docker from "../img/techlogos/docker.png"
@@ -119,6 +121,18 @@ export const technologies = [
         image: css    
     },
     {
+        technologyName: "Sass",
+        image: sass
+    },
+    {
+        technologyName: "C#",
+        image: csharp
+    },
+    {
+        technologyName: "Python",
+        image: python
+    },
+    {
         technologyName: "Node.js",
         image: nodejs    
     }, 
@@ -158,10 +172,6 @@ export const technologies = [
         technologyName: "Redux",
         image: redux
     },
-    {
-        technologyName: "Sass",
-        image: sass
-    },
 ]
 
 export const work = [
@@ -169,15 +179,15 @@ export const work = [
         business: "Platinum Edge Tutoring",    
         position: "Computer Science Tutor",     
         description: [
+            "Spearheaded the resolution of tech-related problems for 200 total teachers and students a week " +
+            "regarding software, hardware, mobile devices, and internet connectivity. ",
             "Tutored and directed class discussion for middle and high school students at 5 different schools " +
             "across NYC in Algebra, History and Computer Science, serving as the lead instructor.",
-            "Coordinated and managed after-school program for students K-5, handling their needs regarding " + 
-            "homework assistance, creative development, and emotional and physical care. ",
             "Coached students in Math and English, aiding in subject mastery and with test-taking skills, " +
             "resulting in massively improved learning comprehension, and mock-test score improvements by up " +
             "to 12% for each grade.",
             "Supervised students during physical activity, reducing injuries by up to 28%, and stimulated their " +
-            "imagination by introducing several activities such as Soccer, Rugby relays, and obstacle courses.- "
+            "imagination by introducing several activities such as Soccer, Rugby relays, and obstacle courses."
         ],
         yearStart: "March 2023",
         yearEnd: "Present"
@@ -186,10 +196,11 @@ export const work = [
         business: "CUNY Tech Prep",    
         position: "Software Engineer Fellow",     
         description: [
-            "Learn in-demand technologies like React, Node + Express, and PostgreSQL as well as industry " + 
-            "best practices for design, implementation, and deployment such as MVC, version control with " +
-            "Git/GitHub, agile & Scrum with Trello and Slack, test driven development, and CI/CD",
-            "Assisted future cohorts in establishing their SQL relations and in deploying their databases to Heroku.",
+            "Coordinated with staff and service providers to ensure seamless deployment of PC equipment and workstations.",
+            "Supervised future cohorts in planning and deploying their project databases to cloud services such as Heroku ",
+            "Participated in professional development program to learn in-demand technologies like React, Node + Express " + 
+            "and PostgreSQL as well as industry best practices for design, implementation, and deployment such as MVC " + 
+            ", version control with Git/GitHub, agile & Scrum with Trello and Slack, test driven development, and CI/CD.",
             "Selected for a technical training program, as one of 183 students out of 400+ applicants",
         ],
         yearStart: "August 2020",

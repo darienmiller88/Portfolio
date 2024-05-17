@@ -30,7 +30,7 @@ export default function Hero() {
 
             <br/>
             <p className="description">
-                I'm a recent Computer Science graduate specializing in Full Stack 
+                I'm a Computer Science graduate specializing in Full Stack 
                 development with a focus on backend development. I am currently focusing on 
                 building fast, responsive and secure web applications for my clients.
             </p>

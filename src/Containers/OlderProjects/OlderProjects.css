@@ -1,13 +1,12 @@
-#project_section > .older_projects_header{
+.older_projects_header{
     margin: auto;
     width: fit-content;
     color: white;
     font-size: 22px;
     font-weight: bold;
-    /* border: 2px solid yellow; */
 }
 
-#project_section > .older_projects{
+.older_projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -22,17 +21,17 @@
 }
 
 @media screen and (min-width: 768px) {
-    #project_section > .older_projects_header{
+    .older_projects_header{
         font-size: 40px;
     }
 }
 
 @media screen and (min-width: 1500px) {
-    #project_section > .older_projects_header{
+    .older_projects_header{
         font-size: 60px;
     }
 
-    #project_section > .older_projects{
+    .older_projects{
         width: 90vw;
         gap: 25px 15px;
     }

@@ -15,17 +15,16 @@ export default function About() {
             <div className="about-me">
                 <div className="about-me-description">
                     <p>
-                        Hey there! My name is Darien and I'm Software Developer with a focus on Back end 
-                        development and specialization in lower level languages such as C++ and Go. 
-                        I started programming in 2017 mostly on game development in SFML and C++, and 
+                        Hey there! My name is Darien and I'm Software Developer who's grown a little too obsessed 
+                        with his craft. I started programming in 2017 mostly on game development in SFML and C++, and 
                         slowly transtioned to the web and Software development world using Go as my primary
-                        backend language.
+                        backend language, nunerous other front end tools such as React, Svelte, Sass and Vue.
                     </p>
                     <p>
                         As of today, I've measurably improved the lives of hundreds of clients through my
                         private tutoring services and working at agencies like 
-                        <a href='https://bit.ly/3sxAXcB'> CUNY Tutor Corps </a>,
-                        be they colleagues working alongside me, or school students K through 12. Recently,
+                        <a href='https://bit.ly/3sxAXcB'> CUNY Tutor Corps, </a>
+                        which included working with colleagues, or school students K through 12. Recently,
                         I have become an alumni, and Software Engineering graduate from
                         <a href='https://cunytechprep.nyc/'> CUNY Tech Prep </a>, learning in demand
                         skills and growing my network substantially.

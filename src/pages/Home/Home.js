@@ -4,6 +4,7 @@ import "../../components/Scrollbar/Scrollbar.css"
 import About from "../../Containers/About/About"
 import Hero from '../../Containers/Hero/Hero'
 import Projects from "../../Containers/Projects/Projects"
+import OlderProjects from '../../Containers/OlderProjects/OlderProjects'
 import Work from '../../Containers/Work/Work'
 import Technologies from "../../Containers/Technologies/Technologies"
 import Contact from '../../Containers/Contact/Contact'
@@ -21,8 +22,9 @@ export default function Home() {
             <Hero />
             <About />            
             <Technologies />            
-            <Work />
             <Projects/>
+            <Work />
+            <OlderProjects />
             <Contact />
             <Footer />
         </div>
