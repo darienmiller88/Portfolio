@@ -23,11 +23,11 @@ export default function About() {
                     <p>
                         As of today, I've measurably improved the lives of hundreds of students through my
                         private tutoring services and working at agencies like
-                        <a href='https://bit.ly/3sxAXcB'> ADAPT Community Network </a>,
+                        <a href='https://adaptcommunitynetwork.org/'> ADAPT Community Network </a>,
                         which allowed me to deliver introduction computer classes to individuals with diverse
                         learning differences. Recently,
                         I have become an alumni, and Data Analyst graduate from
-                        <a href='https://coopcareers.org/'> COOP Carreers</a>, learning in demand
+                        <a href='https://coopcareers.org/'> COOP Careers</a>, learning in demand
                         skills and growing my network substantially.
                     </p>
                 </div>
