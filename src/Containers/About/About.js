@@ -18,15 +18,16 @@ export default function About() {
                         Hey there! My name is Darien and I'm Software Developer who's grown a little too obsessed 
                         with his craft. I started programming in 2017 mostly on game development in SFML and C++, and 
                         slowly transtioned to the web and Software development world using Go as my primary
-                        backend language, numerous other front end tools such as React, Svelte, Sass and Vue.
+                        backend language, numerous other front end tools such as Vue, React, Svelte, Sass.
                     </p>
                     <p>
-                        As of today, I've measurably improved the lives of hundreds of clients through my
-                        private tutoring services and working at agencies like 
-                        <a href='https://bit.ly/3sxAXcB'> CUNY Tutor Corps, </a>
-                        which included working with colleagues, or school students K through 12. Recently,
-                        I have become an alumni, and Software Engineering graduate from
-                        <a href='https://cunytechprep.nyc/'> CUNY Tech Prep </a>, learning in demand
+                        As of today, I've measurably improved the lives of hundreds of students through my
+                        private tutoring services and working at agencies like
+                        <a href='https://bit.ly/3sxAXcB'> ADAPT Community Network </a>,
+                        which allowed me to deliver introduction computer classes to individuals with diverse
+                        learning differences. Recently,
+                        I have become an alumni, and Data Analyst graduate from
+                        <a href='https://coopcareers.org/'> COOP Carreers</a>, learning in demand
                         skills and growing my network substantially.
                     </p>
                 </div>
