@@ -191,6 +191,21 @@ export const technologies = [
 
 export const work = [
     {
+        business: "ADAPT Community Network",    
+        position: "Computer Specialist",     
+        description: [
+            "Directs classes for 30+ participants on computing and coding concepts, increasing computer literacy " +
+            "by 75% as measured through post-class assessments tailored to individuals with diverse physical and " + 
+            "learning differences.",
+            "Resolves 90% of technical issues during workshops, improving the overall accessibility and learning " +
+            "experience by providing hands-on IT support for both hardware and software challenges.",
+            "Developed and launched a VueJS & Go web app for score tracking, increasing gameplay efficiency " +
+            "by 200% and streamlining tournament organization."
+        ],
+        yearStart: "July 2024",
+        yearEnd: "Present"
+    },
+    {
         business: "Platinum Edge Tutoring",    
         position: "Computer Science Tutor",     
         description: [
