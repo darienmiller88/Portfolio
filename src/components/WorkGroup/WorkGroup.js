@@ -33,13 +33,7 @@ export default function WorkGroup() {
                     work.map((job, i) => {
                         //Set the first job to be the active class to highlight it.
                         return (
-                            i === 0
-                            ?
-                            <div className={`work-title ${activeClass}`} onClick={jobOnclick} key={i}>
-                                { job.business }
-                            </div>
-                            :
-                            <div className="work-title" onClick={jobOnclick} key={i}>
+                            <div className={`work-title ${i === 0 ? activeClass : ''}`} onClick={jobOnclick} key={i}>
                                 { job.business }
                             </div>
                         )
