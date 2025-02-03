@@ -50,9 +50,9 @@ export const projects = [
     {
         pictures: [AdaptScoreboard1, AdaptScoreboard2, AdaptScoreboard3, AdaptScoreboard4],
         projectTitle: "Adapt Scoreboard",
-        description: "Messenger application built using Svelte, Go and PostgreSQL. Messenger allows " +
-        "users to chat together in a public chat, as well as create group chats where they can message other " + 
-        "users added to those chats. Users can even see message history!",
+        description: "Jeopardy scorekeeper application built using Vue3, Go and MongoDB. It allows " +
+        "users to add players to ADAPT locations, create score cards for each player, and " + 
+        "create Teams based on each location for team games.",
         stack: ["Vue3", "Go", "MongoDB", "Netlify"],
         githubLink: "https://github.com/darienmiller88/DigitalScoreBoard",
         projectLink: "https://adaptscoreboard.netlify.app/"
@@ -136,6 +136,18 @@ export const technologies = [
         image: css    
     },
     {
+        technologyName: "SQL",
+        image: sql
+    },
+    {
+        technologyName: "PostgreSQL",
+        image: postgres    
+    }, 
+    {
+        technologyName: "MongoDB",
+        image: mongodb    
+    },
+    {
         technologyName: "Sass",
         image: sass
     },
@@ -160,14 +172,6 @@ export const technologies = [
         image: git    
     },
     {
-        technologyName: "PostgreSQL",
-        image: postgres    
-    }, 
-    {
-        technologyName: "MongoDB",
-        image: mongodb    
-    },
-    {
         technologyName: "Heroku",
         image: heroku    
     },
@@ -175,10 +179,6 @@ export const technologies = [
         technologyName: "MySQL",
         image: mysql    
     }, 
-    {
-        technologyName: "SQL",
-        image: sql
-    },
     {
         technologyName: "Netlify",
         image: netlify    
