@@ -1,4 +1,4 @@
-import twidder1 from "../img/twidder/twidder1.PNG"
+// import twidder1 from "../img/twidder/twidder1.PNG"
 
 import pong          from "../img/Chip-8/pong.png"
 import fishie        from "../img/Chip-8/fishie.png"
@@ -19,6 +19,11 @@ import MDBank2 from "../img/MDBank/create-account.png"
 import MDBank3 from "../img/MDBank/dashboard.png"
 import MDBank4 from "../img/MDBank/transfer-money.png"
 import MDBank5 from "../img/MDBank/transfers.png"
+
+import AdaptScoreboard1 from "../img/AdaptScoreboard/adaptcoreboard1.png"
+import AdaptScoreboard2 from "../img/AdaptScoreboard/adaptcoreboard2.png"
+import AdaptScoreboard3 from "../img/AdaptScoreboard/adaptcoreboard3.png"
+import AdaptScoreboard4 from "../img/AdaptScoreboard/adaptcoreboard4.png"
 
 import cplusplus from "../img/techlogos/c++.png"
 import csharp from "../img/techlogos/csharp.png"
@@ -42,6 +47,16 @@ import sass from "../img/techlogos/sass.png"
 import sql from "../img/techlogos/sql.png"
 
 export const projects = [
+    {
+        pictures: [AdaptScoreboard1, AdaptScoreboard2, AdaptScoreboard3, AdaptScoreboard4],
+        projectTitle: "Adapt Scoreboard",
+        description: "Messenger application built using Svelte, Go and PostgreSQL. Messenger allows " +
+        "users to chat together in a public chat, as well as create group chats where they can message other " + 
+        "users added to those chats. Users can even see message history!",
+        stack: ["Vue3", "Go", "MongoDB", "Netlify"],
+        githubLink: "https://github.com/darienmiller88/DigitalScoreBoard",
+        projectLink: "https://adaptscoreboard.netlify.app/"
+    },
     {
         pictures: [messenger1, messenger2, messenger3, messenger4],
         projectTitle: "Messenger",
@@ -81,14 +96,14 @@ export const projects = [
         githubLink: "https://github.com/darienmiller88/Girls-in-Tech-Hackathon",
         projectLink: "https://girlsintech.netlify.app/"
     },
-    {
-        pictures: [twidder1],
-        projectTitle: "Twidder",
-        description: "Full stack Twitter clone built using React and Go.",
-        stack: ["React", "Go", "Gorm", "PostgreSQL", "Netlify"],
-        githubLink: "https://github.com/darienmiller88/Better-Twitter-Clone",
-        projectLink: ""
-    }
+    // {
+    //     pictures: [twidder1],
+    //     projectTitle: "Twidder",
+    //     description: "Full stack Twitter clone built using React and Go.",
+    //     stack: ["React", "Go", "Gorm", "PostgreSQL", "Netlify"],
+    //     githubLink: "https://github.com/darienmiller88/Better-Twitter-Clone",
+    //     projectLink: ""
+    // }
 ]
 
 export const technologies = [
